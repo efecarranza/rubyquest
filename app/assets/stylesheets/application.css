@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+body{
+   font-family: '8BITWONDERNominal'; 
+   font-weight: normal; 
+   font-style: normal; 
+   font-size: 11px;
+}
+
+h1{
+	border-style: groove;
+	border-width: 5px;
+	border-color: green;
+	font-size: 30px;
+}
+
+form{
+	border-style: groove;
+	border-width: 5px;
+	border-color: green;
+}
