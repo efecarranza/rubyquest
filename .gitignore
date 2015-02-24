@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore Apple's proprietary hand-holding folder memory bloat-ware (real talk).
+.DS_Store
