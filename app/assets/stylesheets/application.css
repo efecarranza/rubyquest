@@ -14,19 +14,25 @@
  *= require_self
  */
 body {
+   padding: 5px;
    font-family: '8BITWONDERNominal'; 
    font-weight: normal; 
    font-style: normal; 
    font-size: 14px;
-   background-color: #333333;
+   background-color: #fff;
    color:#000000;
  }
 
 h1{
+	padding: 5px;
 	border-style: groove;
 	border-width: 6px;
 	border-color: #330000;
 	font-size: 30px;
+}
+
+form{
+	padding: 5px;
 }
 
 h2{
@@ -45,6 +51,7 @@ form{
 }
 
 a{
+	padding: 5px;
 	border-style: groove;
 	border-width: 5px;
 	border-color: #330000;
