@@ -10,14 +10,14 @@ class PostsController < ApplicationController
 		@post = Post.find(params[:id])
 	end
 
-	before_action :authorize
+	before_action :authenticate
 
 	def new
-		@post = Post.new
+		@post = current_user.posts.build
 	end
 
 	def create
-		@post = Post.new(post_params)
+		@post = current_user.posts.build(post_params)
 
 		if @post.save
 			redirect_to @post

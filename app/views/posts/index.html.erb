@@ -1,0 +1,11 @@
+<h1 class='header'>
+
+<% @posts.each do |post| %>
+	<h2 class='buttons'><%= link_to post.title, post %>
+	<p class="publish">
+		Published by 
+		<%= post.user.name %>
+	<%= time_ago_in_words(post.created_at) %>
+<% end %>
+
+<%= link_to "New Post", new_post_path %>
