@@ -19,11 +19,13 @@ body {
    font-weight: normal; 
    font-style: normal; 
    font-size: 14px;
-   background-color: #fff;
+   background-color: #d1d1d1; /* 2e2e2e for very dark instead */
    color:#000000;
  }
 
 h1{
+	background-color: #D32F2F;
+	color: #fff;
 	padding: 5px;
 	border-style: groove;
 	border-width: 6px;
@@ -33,6 +35,8 @@ h1{
 
 form{
 	padding: 5px;
+	background-color: #D32F2F;
+	color: #fff;
 }
 
 h2{
@@ -56,4 +60,6 @@ a{
 	border-width: 5px;
 	border-color: #330000;
 	font-size: 10px;
+	color: #fff;
+	background-color: #D32F2F;
 }
