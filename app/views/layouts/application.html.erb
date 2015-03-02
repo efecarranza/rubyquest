@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!-- bootstrap -->
+<link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <!-- font -->
 <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/8bit-wonder" rel="stylesheet" type="text/css"/>
@@ -16,9 +17,13 @@
 <p class="alert"><%= alert %></p>
 <div class="text-center">
 <% if current_user %>
-  Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+  Signed in as <%= current_user.name %>
+  <%= image_tag "rq-logo-pixeled.png", class: "rq-logo-pixeled", width: '350' %>
+  <%= link_to "Logout", '/logout' %>
 <% else %>
-  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+  <%= link_to 'Login', '/login' %>
+  <%= image_tag "rq-logo-pixeled.png", class: "rq-logo-pixeled", width: '350' %>
+  <%= link_to 'Signup', '/signup' %>
 <% end %>
 </div>
 <%= yield %>

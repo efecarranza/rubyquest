@@ -15,11 +15,12 @@
  */
 body {
    padding: 5px;
-   font-family: '8BITWONDERNominal'; 
-   font-weight: normal; 
+   font-family: 'Monda', sans-serif;
+   font-weight: 700; 
    font-style: normal; 
    font-size: 14px;
    background-color: #d1d1d1; /* 2e2e2e for very dark instead */
+   background-image: url("shards.gif");
    color:#000000;
  }
 
@@ -50,7 +51,7 @@ form{
 	border-style: groove;
 	border-width: 5px;
 	border-color: #330000;
-	font-size: 10px;
+	font-size: 12px;
 	vertical-align: text-bottom;
 }
 
@@ -59,7 +60,7 @@ a{
 	border-style: groove;
 	border-width: 5px;
 	border-color: #330000;
-	font-size: 10px;
+	font-size: 12px;
 	color: #fff;
 	background-color: #D32F2F;
 }
