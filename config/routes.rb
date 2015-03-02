@@ -6,11 +6,10 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
-  post '/answers' => 'answeres#get_answer'
+  post '/answers.json' => 'answers#get_answer'
 
   resources :articles
   resources :posts
   resources :sessions
 
-  root 'posts#index'
 end

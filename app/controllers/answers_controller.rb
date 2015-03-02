@@ -1,7 +1,13 @@
 class AnswersController < ApplicationController
   def get_answer
-    # Read params from POST request
-    # Send to Database, check by ID
-    # Check if post answer == database answer
+    Rails.logger.debug "********************"
+    Rails.logger.debug params
+    Rails.logger.debug "********************"
+    @answer = Answer.find(params[:id])
+    if @answer.answers.include? params[:answer]
+      render :json => { message: @answer.message }
+    else
+      render :json => { message: "Error" }
+    end
   end
 end
