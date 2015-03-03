@@ -29,7 +29,7 @@ h1{
 	color: #fff;
 	padding: 5px;
 	border-style: groove;
-	border-width: 6px;
+	border-width: 3px;
 	border-color: #330000;
 	border-radius: 5px;
 	font-size: 30px;
@@ -43,7 +43,7 @@ form{
 
 h2{
 	border-style: groove;
-	border-width: 5px;
+	border-width: 3px;
 	border-color: #330000;
 	border-radius: 5px;
 	font-size: 30px;
@@ -51,7 +51,7 @@ h2{
 
 form{
 	border-style: groove;
-	border-width: 5px;
+	border-width: 3px;
 	border-color: #330000;
 	border-radius: 5px;
 	font-size: 12px;
@@ -62,7 +62,7 @@ form{
 a:link {
 	padding: 5px;
 	border-style: groove;
-	border-width: 5px;
+	border-width: 3px;
 	border-color: #202020;
 	border-radius: 5px;
 	font-size: 12px;
@@ -76,7 +76,7 @@ a:link {
 a:hover {
     padding: 5px;
 	border-style: groove;
-	border-width: 5px;
+	border-width: 3px;
 	border-color: #202020;
     border-radius: 5px;
 	font-size: 12px;
