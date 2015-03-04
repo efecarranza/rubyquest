@@ -9,6 +9,8 @@
 </p>
 
 <%= link_to 'Back', articles_path %>
-<%= link_to 'Edit', edit_article_path(@article) %>
-<%= link_to 'Delete', article_path(@article), method: :delete,
+<% if current_user && current_user.admin %>
+  <%= link_to 'Edit', edit_article_path(@article) %>
+  <%= link_to 'Delete', article_path(@article), method: :delete,
                                              data: { confirm: 'OK to delete?' } %>
+<% end %>

@@ -1,1 +1,35 @@
+  <div id="menu" hidden="true">
+    <img src="assets/menu.png">
+    <img src="assets/heromenu.png" id="menuHero">
+    <p>Stats</p>
+    <p id="nameMenu"></p>
+    <p id="hpMenu"></p>
+  </div>
+  <div id="teachings" hidden="true">
+  </div>
+  <div id="dialogue" hidden="true">
+  </div>
+  <form id="input" hidden="true">
+    <input type="text" id="form_input">
+  </form>
+  <div id="rubyquest"></div>
+  <script type="text/javascript">
+  window.onload = function() {
+    var game = new Phaser.Game(640, 480, Phaser.CANVAS, 'rubyquest');
+    game.state.add('Boot', RubyQuest.Boot);
+    game.state.add('Preloader', RubyQuest.Preloader);
+    game.state.add('StartMenu', RubyQuest.StartMenu);
+    game.state.add('Dream', RubyQuest.Dream);
+    game.state.add('FirstScene', RubyQuest.FirstScene);
+    game.state.add('rubyquest', RubyQuest.rubyquest);
+    game.state.add('Fight', RubyQuest.Fight);
+    game.state.start('Boot');
+  }
+
+  $(window).resize(function(){
+    $('#menu').css({'position':'absolute','top':$('canvas').offset().top+'px','left':$('canvas').offset().left+'px'});
+    $('#dialogue').css({'position':'absolute','top':$('canvas').offset().top+20+'px','left':$('canvas').offset().left+20+'px'});
+  });
+  </script>
+
 <h1>RubyQuest</h1>

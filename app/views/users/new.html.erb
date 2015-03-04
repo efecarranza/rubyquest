@@ -2,17 +2,17 @@
 <div class="text-justify">
 <%= form_for :user, url: '/users' do |f| %>
 
-		Name:<%=f.text_field :name %>
+		Name:    <%=f.text_field :name %>
 	<br/>
 		Username:<%=f.text_field :username %>
 	<br/>
-		Email:<%=f.text_field :email %>
+		Email:   <%=f.text_field :email %>
 	<br/>
 		Password:<%=f.password_field :password %>
 	<br/>
 		Password Confirmation:<%=f.password_field :password_confirmation %>
 	<br/>
-		<%= f.submit "Submit" %>
+		    <%= f.submit "Submit" %>
 	<br/>
 
 	<% end %>
