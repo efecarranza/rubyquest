@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   resources :posts
   resources :sessions
 
+
+  root 'users#index'
 end
