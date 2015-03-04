@@ -12,6 +12,4 @@
   resources :posts
   resources :sessions
 
-
-  root 'users#index'
 end
