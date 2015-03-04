@@ -16,6 +16,7 @@
   <% if current_user %>
   Signed in as <%= current_user.name %>
   <%= link_to "Logout", '/logout', class: "btn" %>
+  <%= link_to 'Side Quests', '/posts', class: "btn" %>
 <% else %>
   <%= link_to 'Login', '/login', class: "btn" %>
   <%= link_to 'Signup', '/signup', class: "btn" %>
