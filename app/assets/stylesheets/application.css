@@ -58,8 +58,12 @@ form {
 	color: black;
 }
 
+.nav a:first-child {
+  margin-left: 20px;
+}
+
 /* regular link */
-a:link {
+a {
 	padding: 5px;
 	border-style: groove;
 	border-width: 3px;
@@ -87,16 +91,14 @@ a:hover {
 
 /* pressed */
 a:active {
-    padding: 5px;
+  padding: 5px;
 	border-style: groove;
-	border-width: 5px;
+	border-width: 3px;
 	border-color: #202020;
-    border-radius: 5px;
+  border-radius: 5px;
 	font-size: 12px;
-    color: #FF0000;
+  color: #FF0000;
 	background-color: #202020;
-
-
 
 }
 
@@ -132,6 +134,7 @@ td {
   background-color: #000;
   left: 50px;
   color:#fff;
+
 }
 
 .sticky {

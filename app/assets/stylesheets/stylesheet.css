@@ -72,7 +72,6 @@ canvas {
 
 
 body {
-   padding: 5px;
    font-family: 'Monda', sans-serif;
    font-weight: 700;
    font-style: normal;
@@ -173,6 +172,9 @@ a {
 }
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
+}
+a.btn {
+left: 20px;
 }
 
 
