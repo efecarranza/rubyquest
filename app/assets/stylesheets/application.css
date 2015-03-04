@@ -16,8 +16,8 @@
 body {
    padding: 5px;
    font-family: 'Monda', sans-serif;
-   font-weight: 700; 
-   font-style: normal; 
+   font-weight: 700;
+   font-style: normal;
    font-size: 14px;
    background-color: #d1d1d1; /* 2e2e2e for very dark instead */
    background-image: url("shards-mg.png");
@@ -112,9 +112,14 @@ a:active {
 a {
     outline: none, !important;
 }
+
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
 }
 
 
+}
+
+td {
+  color: #fff;
 }
