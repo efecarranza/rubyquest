@@ -13,6 +13,7 @@ RubyQuest.Fight = function(game) {
 	this.heroMaxHp;
 	this.heroHp;
 	this.counter;
+	this.trackPosition;
 };
 
 RubyQuest.Fight.prototype = {
@@ -49,9 +50,9 @@ RubyQuest.Fight.prototype = {
 		this.physics.arcade.enableBody(this.black_bar);
 		this.black_bar.anchor.setTo(0,0);
 
-		this.black2_bar = this.add.sprite(20, 60, 'black_bar');
+		this.black2_bar = this.add.sprite(600, 40, 'black_bar');
 		this.physics.arcade.enableBody(this.black2_bar);
-		this.black2_bar.anchor.setTo(0, 0);
+		this.black2_bar.anchor.setTo(1, 0);
 
 		//GUI - red bar for life
 		this.blood_bar = this.add.sprite(20, 40, 'red_bar');
@@ -59,14 +60,16 @@ RubyQuest.Fight.prototype = {
 		this.blood_bar.anchor.setTo(0, 0);
 
 		//GUI - red bar for mana (ok, it's yellow I know)
-		this.green_bar = this.add.sprite(20, 60, 'yellow_bar');
+		this.green_bar = this.add.sprite(600, 40, 'yellow_bar');
 		this.physics.arcade.enableBody(this.green_bar);
-		this.green_bar.anchor.setTo(0, 0);
+		this.green_bar.anchor.setTo(1, 0);
 
 		// Create Fighters
 		fighterOne = this.add.sprite(150, 260, 'herofight');
 		fighterOne.anchor.setTo(0.5,0.5);
+		trackPosition = hero.position.x;
 		fighterTwo = this.add.sprite(400, 220, 'snakemonster');
+		fighterTwo.anchor.setTo(0.5, 0.5);
 
 		fighterOne.height = 320;
 		fighterOne.width = 208;
@@ -93,32 +96,41 @@ RubyQuest.Fight.prototype = {
 		if (counter % 2 === 0) {
 		  fighterOne.animations.play('attack', 10, false);
 		  if (this.rnd > 0.2) {
+		  	var dmg = this.add.text(fighterTwo.position.x, fighterTwo.position.y, hero.stats.str, txtStyle);
+		  	this.time.events.add(500, dmg.destroy, dmg);
 				monster.hp -= hero.stats.str;
-				console.log(monster.hp);
 			} else {
-				console.log('Miss');
+				var dmg = this.add.text(fighterTwo.position.x, fighterTwo.position.y, 'miss', txtStyle);
+				this.time.events.add(500, dmg.destroy, dmg);
 			}
 			if (monster.hp <= 0) {
-				monster.kill();
-				this.time.events.add(2000, this.state.start('rubyquest', false, false), this);
+				hero.hp = hero.maxHp;
+				hero.position.x = trackPosition;
+				this.state.start('rubyquest', false, false);
 			}
 			counter++;
 		} else {
 			if (this.rnd > 0.25) {
-			fighterTwo.animations.play('attack', 10, false);
-			hero.stats.hp -= monster.str;
+				fighterTwo.animations.play('attack', 10, false);
+				var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, monster.str, txtStyle);
+				this.time.events.add(500, dmg.destroy, dmg);
+				hero.stats.hp -= monster.str;
 			} else {
-				console.log('monster missed');
+				var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, monster.str, txtStyle);
+				this.time.events.add(500, dmg.destroy, dmg);
+				fighterTwo.animations.play('attack', 10, false);
 			}
 			counter++;
-			hero.stats.hp = parseInt(hero.stats.hp);
 			this.blood_bar.scale.setTo((hero.stats.hp / hero.stats.maxHp), 1);
+			this.green_bar.scale.setTo((snakemonster.hp / snakemonster.maxHp), 1);
 			heroHp.setText("HP: " + hero.stats.hp + " /");
 		}
 
 	},
 
 	run: function() {
+		hero.position.x = trackPosition;
+		hero.hp = hero.maxHp;
 		this.state.start('rubyquest', false, false);
 
 	},

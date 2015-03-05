@@ -28,7 +28,8 @@ RubyQuest.rubyquest.prototype = {
 		monster.hp = 100;
 		monster.str = 15;
 
-		snakemonster = this.add.sprite(580, 2000, 'snakemonster');
+		snakemonster = this.add.sprite(780, 2200, 'snakemonster');
+		snakemonster.maxHp = 100;
 		snakemonster.hp = 100;
 		snakemonster.str = 15;
 
@@ -181,10 +182,6 @@ RubyQuest.rubyquest.prototype = {
 	pause: function() {
 		console.log('pause');
 	},
-
-	render: function() {
-
-	}
 
 };
 

@@ -173,9 +173,6 @@ a {
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
 }
-a.btn {
-left: 20px;
-}
 
 
 
