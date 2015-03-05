@@ -11,5 +11,6 @@
   resources :articles
   resources :posts
   resources :sessions
+  resources :comments
 
 end
