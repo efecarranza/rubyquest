@@ -18,7 +18,7 @@ RubyQuest.Fight = function(game) {
 
 RubyQuest.Fight.prototype = {
 
-	init: function(hero, monster) {
+	init: function(hero, snakemonster) {
 
 	},
 
@@ -98,31 +98,32 @@ RubyQuest.Fight.prototype = {
 		  if (this.rnd > 0.2) {
 		  	var dmg = this.add.text(fighterTwo.position.x, fighterTwo.position.y, hero.stats.str, txtStyle);
 		  	this.time.events.add(500, dmg.destroy, dmg);
-				monster.hp -= hero.stats.str;
+				snakemonster.hp -= hero.stats.str;
 			} else {
 				var dmg = this.add.text(fighterTwo.position.x, fighterTwo.position.y, 'miss', txtStyle);
 				this.time.events.add(500, dmg.destroy, dmg);
 			}
-			if (monster.hp <= 0) {
+			if (snakemonster.hp <= 0) {
+				snakemonster.kill();
 				hero.hp = hero.maxHp;
 				hero.position.x = trackPosition;
 				this.state.start('rubyquest', false, false);
 			}
 			counter++;
+			this.green_bar.scale.setTo((snakemonster.hp / snakemonster.maxHp), 1);
 		} else {
 			if (this.rnd > 0.25) {
 				fighterTwo.animations.play('attack', 10, false);
-				var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, monster.str, txtStyle);
+				var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, snakemonster.str, txtStyle);
 				this.time.events.add(500, dmg.destroy, dmg);
-				hero.stats.hp -= monster.str;
+				hero.stats.hp -= snakemonster.str;
 			} else {
-				var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, monster.str, txtStyle);
+				var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, snakemonster.str, txtStyle);
 				this.time.events.add(500, dmg.destroy, dmg);
 				fighterTwo.animations.play('attack', 10, false);
 			}
 			counter++;
 			this.blood_bar.scale.setTo((hero.stats.hp / hero.stats.maxHp), 1);
-			this.green_bar.scale.setTo((snakemonster.hp / snakemonster.maxHp), 1);
 			heroHp.setText("HP: " + hero.stats.hp + " /");
 		}
 
