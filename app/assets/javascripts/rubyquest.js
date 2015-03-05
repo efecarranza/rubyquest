@@ -6,6 +6,9 @@ RubyQuest.rubyquest = function(game) {
 	this.snakemonster;
 	this.cursors;
 	this.mainmap;
+	this.mainmap2;
+	this.mainmapjson;
+	this.blockedLayer;
 	this.menuKey;
 	this.interactKey;
 	this.pauseKey;
@@ -25,6 +28,10 @@ RubyQuest.rubyquest.prototype = {
 		this.physics.startSystem(Phaser.Physics.ARCADE);
 		mainmap = this.add.sprite(0, 0, 'map');
 		mainmap2 = this.add.sprite(0, 0, 'map2');
+		mainmapjson = this.add.tilemap('rq4map');
+		blockedLayer = mainmapjson.createLayer("Real Impassable Layer");
+		// mainmapjson.setCollisionByExclusion([0], false, "Real Impassable Layer");
+
 		monster = this.add.sprite(330, 630, 'monster');
 		monster.hp = 100;
 		monster.str = 15;
@@ -51,7 +58,7 @@ RubyQuest.rubyquest.prototype = {
 		hero.animations.add('walkdown', [18,19,20,21,22,23,24,25,26]);
 		hero.animations.add('walkright', [27,28,29,30,31,32,33,34,35]);
 
-		this.physics.arcade.enable([hero, monster, ed, jo, snakemonster]);
+		this.physics.arcade.enable([hero, monster, ed, jo, snakemonster, mainmapjson]);
 
 		menuKey = this.input.keyboard.addKey(Phaser.Keyboard.M);
 		menuKey.onDown.add(this.menu, this);
