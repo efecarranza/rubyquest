@@ -10269,7 +10269,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/grass.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/grass.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10284,7 +10284,7 @@
         }, 
         {
          "firstgid":19,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/watergrass.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/watergrass.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10299,7 +10299,7 @@
         }, 
         {
          "firstgid":37,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/house.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/house.png",
          "imageheight":224,
          "imagewidth":288,
          "margin":0,
@@ -10314,7 +10314,7 @@
         }, 
         {
          "firstgid":100,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/dirt.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/dirt.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10329,7 +10329,7 @@
         }, 
         {
          "firstgid":118,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/mountains.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/mountains.png",
          "imageheight":288,
          "imagewidth":384,
          "margin":0,
@@ -10344,7 +10344,7 @@
         }, 
         {
          "firstgid":226,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/bridges.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/bridges.png",
          "imageheight":224,
          "imagewidth":192,
          "margin":0,
@@ -10359,7 +10359,7 @@
         }, 
         {
          "firstgid":268,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/house.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/house.png",
          "imageheight":224,
          "imagewidth":288,
          "margin":0,
@@ -10374,7 +10374,7 @@
         }, 
         {
          "firstgid":331,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/rock.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/rock.png",
          "imageheight":32,
          "imagewidth":64,
          "margin":0,
@@ -10390,7 +10390,7 @@
         }, 
         {
          "firstgid":333,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/trunk.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/trunk.png",
          "imageheight":96,
          "imagewidth":192,
          "margin":0,
@@ -10406,7 +10406,7 @@
         }, 
         {
          "firstgid":335,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/treetop.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/treetop.png",
          "imageheight":224,
          "imagewidth":192,
          "margin":0,
@@ -10422,7 +10422,7 @@
         }, 
         {
          "firstgid":339,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/castlefloors_outside.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/castlefloors_outside.png",
          "imageheight":160,
          "imagewidth":128,
          "margin":0,
@@ -10438,7 +10438,7 @@
         }, 
         {
          "firstgid":359,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/castle_outside.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/castle_outside.png",
          "imageheight":352,
          "imagewidth":544,
          "margin":0,
@@ -10454,7 +10454,7 @@
         }, 
         {
          "firstgid":546,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/lava.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/lava.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10470,7 +10470,7 @@
         }, 
         {
          "firstgid":564,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/lavarock.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/lavarock.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10486,7 +10486,7 @@
         }, 
         {
          "firstgid":582,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/dirt2.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/dirt2.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10502,7 +10502,7 @@
         }, 
         {
          "firstgid":600,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/water.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/water.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10518,7 +10518,7 @@
         }, 
         {
          "firstgid":618,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/chests.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/chests.png",
          "imageheight":96,
          "imagewidth":64,
          "margin":0,
@@ -10534,7 +10534,7 @@
         }, 
         {
          "firstgid":624,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/signs.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/signs.png",
          "imageheight":64,
          "imagewidth":96,
          "margin":0,
@@ -10550,7 +10550,7 @@
         }, 
         {
          "firstgid":630,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/buckets.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/buckets.png",
          "imageheight":64,
          "imagewidth":96,
          "margin":0,
@@ -10566,7 +10566,7 @@
         }, 
         {
          "firstgid":636,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/barrel.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/barrel.png",
          "imageheight":64,
          "imagewidth":128,
          "margin":0,
@@ -10582,7 +10582,7 @@
         }, 
         {
          "firstgid":644,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/castle_lightsources.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/castle_lightsources.png",
          "imageheight":128,
          "imagewidth":160,
          "margin":0,
@@ -10598,7 +10598,7 @@
         }, 
         {
          "firstgid":664,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/waterfall.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/waterfall.png",
          "imageheight":160,
          "imagewidth":96,
          "margin":0,
@@ -10614,7 +10614,7 @@
         }, 
         {
          "firstgid":679,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/hole.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/hole.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10630,7 +10630,7 @@
         }, 
         {
          "firstgid":697,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/shadow.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/shadow.png",
          "imageheight":64,
          "imagewidth":160,
          "margin":0,
@@ -10646,7 +10646,7 @@
         }, 
         {
          "firstgid":707,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/housealternate.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/housealternate.png",
          "imageheight":224,
          "imagewidth":288,
          "margin":0,
@@ -10662,7 +10662,7 @@
         }, 
         {
          "firstgid":770,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/cup.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/cup.png",
          "imageheight":64,
          "imagewidth":32,
          "margin":0,
@@ -10678,7 +10678,7 @@
         }, 
         {
          "firstgid":772,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/castlewalls.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/castlewalls.png",
          "imageheight":480,
          "imagewidth":384,
          "margin":0,
@@ -10694,7 +10694,7 @@
         }, 
         {
          "firstgid":952,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/stonehouse.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/stonehouse.png",
          "imageheight":224,
          "imagewidth":288,
          "margin":0,
@@ -10710,7 +10710,7 @@
         }, 
         {
          "firstgid":1015,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/farming_fishing_mod.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/farming_fishing_mod.png",
          "imageheight":640,
          "imagewidth":640,
          "margin":0,
@@ -10726,7 +10726,7 @@
         }, 
         {
          "firstgid":1415,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/gravestones.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/gravestones.png",
          "imageheight":96,
          "imagewidth":160,
          "margin":0,
@@ -10742,7 +10742,7 @@
         }, 
         {
          "firstgid":1430,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/grassalt_flowers.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/grassalt_flowers.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10758,7 +10758,7 @@
         }, 
         {
          "firstgid":1448,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/youngwheat.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/youngwheat.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10774,7 +10774,7 @@
         }, 
         {
          "firstgid":1466,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/tallgrass.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/tallgrass.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10790,7 +10790,7 @@
         }, 
         {
          "firstgid":1484,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/tent.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/tent.png",
          "imageheight":160,
          "imagewidth":128,
          "margin":0,
@@ -10806,7 +10806,7 @@
         }, 
         {
          "firstgid":1504,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/torii.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/torii.png",
          "imageheight":256,
          "imagewidth":320,
          "margin":0,
@@ -10822,7 +10822,7 @@
         }, 
         {
          "firstgid":1584,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/toro.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/toro.png",
          "imageheight":64,
          "imagewidth":32,
          "margin":0,
@@ -10838,7 +10838,7 @@
         }, 
         {
          "firstgid":1586,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/training _dummy.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/training _dummy.png",
          "imageheight":64,
          "imagewidth":512,
          "margin":0,
@@ -10854,7 +10854,7 @@
         }, 
         {
          "firstgid":1618,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/tree_stump.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/tree_stump.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -10870,7 +10870,7 @@
         }, 
         {
          "firstgid":1619,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/victorian house.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/victorian house.png",
          "imageheight":416,
          "imagewidth":288,
          "margin":0,
@@ -10886,7 +10886,7 @@
         }, 
         {
          "firstgid":1736,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/housealt2.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/housealt2.png",
          "imageheight":224,
          "imagewidth":288,
          "margin":0,
@@ -10902,7 +10902,7 @@
         }, 
         {
          "firstgid":1799,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/training _dummy.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/training _dummy.png",
          "imageheight":64,
          "imagewidth":512,
          "margin":0,
@@ -10918,7 +10918,7 @@
         }, 
         {
          "firstgid":1831,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/cherry_blossom_trees.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/cherry_blossom_trees.png",
          "imageheight":128,
          "imagewidth":224,
          "margin":0,
@@ -10934,7 +10934,7 @@
         }, 
         {
          "firstgid":1859,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/plowed_soil.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/plowed_soil.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
@@ -10950,7 +10950,7 @@
         }, 
         {
          "firstgid":1877,
-         "image":"..\/..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/fence.png",
+         "image":"..\/..\/..\/..\/..\/Downloads\/LPC asset list\/new assets\/fence.png",
          "imageheight":192,
          "imagewidth":96,
          "margin":0,
