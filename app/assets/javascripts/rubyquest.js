@@ -24,6 +24,7 @@ RubyQuest.rubyquest.prototype = {
 		this.world.setBounds(0,0,3200,2400);
 		this.physics.startSystem(Phaser.Physics.ARCADE);
 		mainmap = this.add.sprite(0, 0, 'map');
+		mainmap2 = this.add.sprite(0, 0, 'map2');
 		monster = this.add.sprite(330, 630, 'monster');
 		monster.hp = 100;
 		monster.str = 15;
@@ -43,6 +44,7 @@ RubyQuest.rubyquest.prototype = {
 
 		hero.loadTexture('hero');
 		this.world.bringToTop(hero);
+		this.world.bringToTop(mainmap2);
 
 		hero.animations.add('walkup', [0,1,2,3,4,5,6,7,8]);
 		hero.animations.add('walkleft', [9,10,11,12,13,14,15,16,17]);
