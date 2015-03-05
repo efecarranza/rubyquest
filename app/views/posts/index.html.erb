@@ -1,11 +1,16 @@
-<h1 class='header'>
-
-<% @posts.each do |post| %>
-	<h2 class='buttons'><%= link_to post.title, post %>
-	<p class="publish">
-		Published by 
-		<%= post.user.name %>
-	<%= time_ago_in_words(post.created_at) %>
-<% end %>
-
+<h1>Forum</h1>
 <%= link_to "New Post", new_post_path %>
+<table>
+	<tr>
+		<th>Post</th>
+		<th>Views</th>
+		<th>Replies</th>
+		<th colspan="3"></th>
+	</tr>
+
+	<% @posts.each do |post| %>
+	<tr>
+		<td><%= link_to post.title, post %><p class="publish">Published by <%= post.user.username %> <%= time_ago_in_words(post.created_at) %></p></td>
+		</tr>
+<% end %>
+</table>

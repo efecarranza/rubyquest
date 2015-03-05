@@ -1,4 +1,4 @@
-<h1 class='title'><% @post.title %></h1>
+<h1 class='title'><%= @post.title %></h1>
 <p class='content'><%= @post.content %></p>
 	<% if current_user.username == @post.user.username %>
 <%= link_to "Edit", edit_post_path(@post) %>
