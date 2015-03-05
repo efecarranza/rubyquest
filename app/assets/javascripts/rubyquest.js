@@ -72,14 +72,13 @@ RubyQuest.rubyquest.prototype = {
 			$.ajax( {
 				type: "POST",
 				url:"/answers.json",
-				data: { id: 1, answer: $('#form_input')[0].value}
+				data: { id: 1, answer: $('#form_input').val()}
 			}).success(function(data) {
 				if (data.message === 'Success') {
+					alert("Congratulations! You've acquired a Gem.");
 					progress.gems.gemOne = true;
-					console.log(data.message);
 				} else {
 					alert("Oops, try again!");
-					console.log(data.message);
 				}
 			});
 
@@ -96,11 +95,11 @@ RubyQuest.rubyquest.prototype = {
 		if (progress.act1.metEd && !progress.gems.gemOne) {
 			$('#teachings').css("background-image", "url(/assets/lesson1.png");
 			$('#teachings').show().css({'position':'absolute','top':$('canvas').offset().top+'px','left':$('canvas').offset().left+'px'});
-			$('#input').show();
+			$('#input').show().css({'position':'absolute','top':$('canvas').offset().top+ 400 + 'px','left':$('canvas').offset().left+ 230 +'px'});;
 
 		} else {
 			$('#teachings').hide();
-			// $('#input').hide();
+			$('#input').hide();
 		}
 
 		hero.body.velocity.x = 0;
