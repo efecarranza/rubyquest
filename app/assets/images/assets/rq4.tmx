@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="75" tilewidth="32" tileheight="32" nextobjectid="1071">
+ <tileset firstgid="1" name="grass" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/grass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="19" name="water-grass" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/watergrass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="37" name="house" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/house.png" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="100" name="dirt" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/dirt.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="118" name="mountains" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/mountains.png" width="384" height="288"/>
+ </tileset>
+ <tileset firstgid="226" name="bridges" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/bridges.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="268" name="house" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/house.png" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="331" name="rock" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/rock.png" trans="ffffff" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="333" name="trunk" tilewidth="96" tileheight="96">
+  <image source="../../Downloads/LPC asset list/trunk.png" trans="ffffff" width="192" height="96"/>
+ </tileset>
+ <tileset firstgid="335" name="treetop" tilewidth="96" tileheight="96">
+  <image source="../../Downloads/LPC asset list/treetop.png" trans="ffffff" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="339" name="castlefloors_outside" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/castlefloors_outside.png" trans="5c5b40" width="128" height="160"/>
+ </tileset>
+ <tileset firstgid="359" name="castle_outside" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/castle_outside.png" trans="5c5b40" width="544" height="352"/>
+ </tileset>
+ <tileset firstgid="546" name="lava" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/lava.png" trans="ffffff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="564" name="lavarock" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/lavarock.png" trans="ffffff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="582" name="dirt2" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/dirt2.png" trans="ffffff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="600" name="water" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/water.png" trans="ffffff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="618" name="chests" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/chests.png" trans="ffffff" width="64" height="96"/>
+ </tileset>
+ <tileset firstgid="624" name="signs" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/signs.png" trans="ffffff" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="630" name="buckets" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/buckets.png" trans="ffffff" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="636" name="barrel" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/barrel.png" trans="ffffff" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="644" name="castle_lightsources" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/castle_lightsources.png" trans="ffffff" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="664" name="waterfall" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/waterfall.png" trans="ffffff" width="96" height="160"/>
+ </tileset>
+ <tileset firstgid="679" name="hole" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/hole.png" trans="ffffff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="697" name="shadows" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/shadow.png" trans="ffffff" width="160" height="64"/>
+ </tileset>
+ <tileset firstgid="707" name="housealternate" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/housealternate.png" trans="ffffff" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="770" name="cup" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/cup.png" trans="ffffff" width="32" height="64"/>
+ </tileset>
+ <tileset firstgid="772" name="castlewalls" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/castlewalls.png" trans="ffffff" width="384" height="480"/>
+ </tileset>
+ <tileset firstgid="952" name="stonehouse" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/stonehouse.png" trans="ffffff" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="1015" name="farming_fishing_mod" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/farming_fishing_mod.png" trans="ffffff" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="1415" name="gravestones" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/gravestones.png" trans="ffffff" width="160" height="96"/>
+ </tileset>
+ <tileset firstgid="1430" name="grassalt_flowers" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/grassalt_flowers.png" trans="ffffff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1448" name="youngwheat" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/youngwheat.png" trans="ffffff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1466" name="tallgrass" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/tallgrass.png" trans="ffffff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1484" name="tent" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/tent.png" trans="ffffff" width="128" height="160"/>
+ </tileset>
+ <tileset firstgid="1504" name="torii" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/torii.png" trans="ffffff" width="320" height="256"/>
+ </tileset>
+ <tileset firstgid="1584" name="toro" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/toro.png" trans="ffffff" width="32" height="64"/>
+ </tileset>
+ <tileset firstgid="1586" name="training _dummy" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/training _dummy.png" trans="ffffff" width="512" height="64"/>
+ </tileset>
+ <tileset firstgid="1618" name="tree_stump" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/tree_stump.png" trans="ffffff" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="1619" name="victorian house" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/victorian house.png" trans="ffffff" width="288" height="416"/>
+ </tileset>
+ <tileset firstgid="1736" name="housealt2" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/housealt2.png" trans="ffffff" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="1799" name="training _dummy" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/training _dummy.png" trans="ffffff" width="512" height="64"/>
+ </tileset>
+ <tileset firstgid="1831" name="cherry_blossom_trees" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/cherry_blossom_trees.png" trans="ffffff" width="224" height="128"/>
+ </tileset>
+ <tileset firstgid="1859" name="plowed_soil" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/plowed_soil.png" trans="ffffff" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1877" name="fence" tilewidth="32" tileheight="32">
+  <image source="../../Downloads/LPC asset list/new assets/fence.png" trans="ffffff" width="96" height="192"/>
+ </tileset>
+ <layer name="Base Tile Layer" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="100" height="75" opacity="0.99">
+  <data encoding="base64" compression="zlib">
+   eJztnb9rFEEUx+fukhMLNYh/gBaSaDREkWhibyM2RsVCAxYqNklAQUWCiURBxOpMLPxRiGJhYSGC+IPEUg0ixGiTShsriWKhYuF73Aw7N5nd272bnZm9fR94zO3OMjN533s7b3b2CGNu+VAw19Z7g23lnbGCmZJonrsGfGmijbhMKcdL9rq2wmPw5Q2w02BnEvh1Cq6dBrtZqLZhi/vK8W97XUdyaIWZdmbBlw/AJhvw6cNC0IYtPirHf8C6ivb6J6L553oABBtjy+OEcMcn1wMwgKn5hiAIv1HXIK3COoN54lrKOQnCOpjX7oHYW+CfPzseD0HIfOfmkgXH/ZugWykb5Rc3IpousF7lnOz7HUqp1selrcBYu8P9jadgTyLqXT83ucjzym2aOvT9Pm4y4pzQZkbJTW+XGbtRDkqfeA02AzYLNu12KInRxYIuZl5yPdD/d8BugV0CG+dlRdLF9f3qEdg7sDmweyHXuI6ROOjuVwKhx1muwYRiqMl5T/TIMlsj6vby+k4W6KHTQtYE+cuNWM79Ovf2LRF1B3g95gBCj0Fo70CI+Y7re9RwuapHJcJX6O+NLIgTuexky/U4Am0dDbGhDGjiCjHvjihzrUofWA8L4qSPl0KHPhauxylush5j9IxwGRgXp8vVuXeEz7N4PAo2q/EX6iF06OKl0AH92w/lC0UP9V7lQ3x8AfvqdghazpZr8yCR+6C9VPQ4rxyra5QJqB+XrjkObZwAOwl2mJt8ziXf3HYfitDiKo+Pa5Imqh5I1Bo8qu5YuWq+Iz/fxTn9esS1w+CfinT8ykD/Qgs5PoQmOj106404dd2sVq9mn3ulTRuL95xxRPLRGwP9DobEx0HDeuxQ6qOuzSPFUrXEOfdZqTY+kKEQPdJgN70vzUpcD5xfhSaY+7wqVrWYKwV5koy69gg7J9fJJp8f4OXqFtej0p7seqEJ5q9DPPfRaYHgWmOA1a7Vdefkuj5ucj0ed7Egd26USRjn5WJQ+kojmmD+ivERpgWi8yN+3sz0vhXX63yve6afBFUDXzVJqkVSdH4M8+0uXqer325sRP6SthaIzo9JfGsq181KfPhCmN9N5rpZmT/SQPWvzt+6/cJW4opHmqv+1fm7ngZRe1pZwidddAxyq0ez+S0RD3W9J5/v5J931mmjzeiI0sWX+MD9QVz7dSrntzD9elCOh3FP/oZWoYcb0suC9+XEHpV6L8J4wPVHfwN9dTQywByCPsa1XT9rzM9xWJtSuwRBEGmhe58CobnFDbb2w4h4kB5+QXr4hSk9aL4xA8WHX5Ae+SEv97Al+E7/4PazaOYd9iT7u3H9nBc9VCYM6NGK+4y2eVOy36fuO98hnVfLPDFn6F32pPu7HSGfo87lgQVDeqS9v5tXfdIizJ9RfiYNknGO5wAbpQ31Dgub662u05KU9ybhQhM5Wav7tFlmIc96q8wl8holbUifKsPc15j3zteZ21W9TJEVLVz/dm+0WLs+mQ/5Ldb+DPz+0wS+rHfFGmURyucOnx1mJY7SxtQaJQqffS3Wuushd9yQpZczLWNLw7y9y1zPrz7EzibXA/AYF/q0+m/26j1PbKa9PIG51qKl/Bb/NcZKO11lFhu5lmAV2Bp73REEEYP/px3X+Q==
+  </data>
+ </layer>
+ <layer name="Tile Layer 5" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   eJzt3U1v0zAYwPGoTN4V9imQuLAr3PkCFaCNFzE6YOy0gXgpgwHlG6Dd2LWDCwgunBhXhCakCe3Avg224gjXdZMUJfGz5v+TrKVe2jrPoyexm05Lkv+zNN/s8yS71El/HkUcA/mQpc352Io9AM+ZpN35kGjFxvXGlPElH/VZSKaPL/mo14oTX1MrCwX7k49mmGuKyc2V+fxzGPlolqkPt2ZW9fYd3e7avh75ADCDPqpyfWjG10DsQ31AG50P1EKorw4vOs28z0myGIh9qK8Or7187DfztgAqtK3r+GnOufVcwfNDv18PnINCfRg30LnYqvha91DH/p0T/7cq7ZMi5n3YGIY69ju6vdftg267Ku3rC8pJm9xXaU181u2LrRXTNyAfUVzTcb+s0p+mddW/Pky2a+OzU3GcVvXr3dStZ9t1lfZJJWGt6M93ys5/LpTYZ9nm45NtJh/L9vUlHLvPXyvGkMV/qEYfu55MGOeG1//ce9yz+Vizza0PCccuUTb/3FOjj13PSsau7+1nauKqbpu2Ldk6Ce2LUcOazuu3nNe9LfjaIc1eiVjlrdGL1u+YTl31gWJzznbXywNrg/i6dt1scvFNX2fvNZyTl1zbx5j56KNOmo8qXbQtzxvyMSKbk5q66Jf8nHfT2edsfUNrpWxO2sR8lHUHAMny7gOjOv7nh5NUfR8YYa+I84llakniPY+2etzhnkfVHnjxZC0BAAAAAIA830/FHkG+ueJdZsoP4fkAYjvk+3SiHOt8HNjvckGGI2oEKEX6HLht8ubA5EoW1ivAuGyNwlpFhmyNckw+xGCNIs+as/2zJev5bec4/+jtfaHH/VvouKo28P6uTGo+2mgxIR8SSP+e7S+u7aIw1wo7HXsAGFP0f4mAWfAXUyJgNA==
+  </data>
+ </layer>
+ <layer name="Tile Layer 6" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   eJzt3LENwCAAA0HIAGlp2TVjEYnVyAqpMNLdBJa+dykAAAAAAAAAnOK5di8AAAAAAAAAAAAAAAAAAAAAAIBzTT8+UV49YtxVjyRNjyj96zH0AAD4bQHmHwSG
+  </data>
+ </layer>
+ <layer name="Chests level (empties below)" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   eJzt3FEOwBAMAFBx3HH/b0ewZEJX751AVKppRSms0OrpFQBwA/cNsMMj14Qj/8fRxQIAAAAAAICkzCW/MUuMx5nez54DAJCZehcAAAAAmHnbR/SnAwAAAAB/4v0cM3qeAEBmah0AgDUG+tcGYg==
+  </data>
+ </layer>
+ <objectgroup name="Player / Character Layer"/>
+ <layer name="Overlay 1 - tree trunks" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   eJztnFtuwyAQRdMFNvtfTlVVllIEZjCPuQPn/ESKI3mYOw/AJq8XAICd95e3BXsSxa/fGTuj2D4SrzF/+h8tdDhVi9y4vVCyZSVqcXaqDqqgxz6o5Xp0yI19IDe0QZ9xpHWrpY5dOqSf0E9Oh+u7uzUiWqzBuk5HD39qGjB3m0+pPpEXfqS+T/MAbdaQ+hm/+3NynVLthydpoEyPDqqxtQuf/lXIl5LeT+KA2AEAb3auQwo9A/LsHHc5ThvvaiL7N0KdmmFjZM0AFFmZU633Oinfe95FgLGM3LeB+aCLBtSw/+w+/ujjm2W/ml/U7PEggg8i2Ghhl3EosMqXpd79+znbhgj7WauprUFWxIVSHnva0nJvDztH3jOKnwFUscTxibFu7fNK+wgqOn2+i8t8SY+aJjPi6IQ4qI3R8/yASm2YxZ0v78775a5HiNUIepb8GNHfO5A7I/OkV1+/Rbd+crlwlx+la7UaVyLS8+NV85KWfmGtcdCHxZ+tcwDow3rmsrdX9Oa9Yi2bQamXlPx/8tnZmaT9obd2wXisa3VLr4dxUIv8qWnQsgaBMbDm0ODJenEmnnNb9Xi729tSt31nRvge/dpp2d/NEXUdrWh37X/20ppFvI+FOZQdr/zhPZI/VMfe8pxq5n2foNgTnuC59oA8lufsaKTPD4P5Rb8=
+  </data>
+ </layer>
+ <layer name="Overlay 2 - tree tops" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   eJztnEluwzAMRZNVjtJh0WHRYZG2R7Dj+x+mMgoDriBZ1EhS+g/QogEaU/wcJNnOcj4Bi5sAnywCbCiNBL9SmHZ2bjZrsb0kXHOed9edHDb0mBsacGmxj5FedXHNmwuqLasWsyC7c5FWf6m+lWZ3r1D1WKx+vv4NjXixNYEeZYnpX7bvoQUv8y4n1rGgbolm31dAHnbdOqpjt/P//jGjp1TDtdbaPpsCfkfdqg91n47caI9vfeXTQNLZQ4/YfWPFzg/QHtv3ds+BNm3Y+/mG3i0Cu16NpInUM+2RNJBMjg5SY6sXXPfVOfHpnbLmRuwAALjpuQ5J6BnAzWjnVD3nmQQ0x5OGOlUjfjVrBsDoxOavlny/u5xO92Y8mPF4SfsO+/723NnztS15Mho8m/FixmuCHj6/Q4803owG72Z8mPGZmB9HQJc4rkaDLzO+zfgpqIetw+i69D5/Lf3ZRy19pOkuzR4ONPhAez5t9DIPCbTypa93t9iHaDjPksJk7RNbXEsCnLbEXJvDzpL5ydknNfRoAEJQ4lhSbW0Ftc/b/tNS+2uyfxYX6yV5hDSpEUc9x8EW56E5cr5PLqU21OLo+f/QZxrf89eiJ8WXGvzdA64cSenV1HoHwlDqVWqtouhT8rn/2rRal1A/i/1ekA4lznNzAcQR2y9Syc37Uc7qXO/CHvXqkd+drclRv6b8D6gPda+eoiWIB7VIDiENYn+3B+RDqUPwf31q7RdT4VzbSo+3o7Mt6bb3TAnfQ794cvciWvfREu32rXd9NQvxXhb4kw7XvQA8R/KH1LnH3Keqed0UJPaEFDj3HsAN5T47NAIAaOYX71lUkQ==
+  </data>
+ </layer>
+ <layer name="Overlay 3 - roofs" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   eJzt2zlOw0AUxvEJUnwV1iKAKdg7bkDLEQCJIkqBFLgClNBxHHaOgFgaykDLG2lGGT1hExJrvPD/SZ8SLCIhf7bGzzjGAAAAAAAAAACAsky3jFmUzLbK/ktwPGXMqvSwJlmnj1qw58+yJJWscB6VIuwgVX2kv3RzkRhzngxfMbmO7OcNyaaLf78VbLPvl4I+7P6/lPQlp8HrGb1MzK8pefSa03UdnKjYTnr0EV0/2P++i3Ab8l1F3Ee79JFrX/bPgeQw0n7ao49Mtouu66MXqRP6+JnvIuwjVidNd9025kZyK7lrj/65oyT/Z4znXjp4kDxKnv7QB+pJz+g6ej63vz8nmXdZ4N5KofSMrqPncz9DhrHzYthTUzoad62oAt1TE+4js1YAAIAY7HXtTHA9y3MSxcr6v7nfrufBjuvDzyQ8J1EsPw/uqNnPb9fzoO4DxfLH97Y6zsP5jmMfAAAAAAAAAOrpOTHmVfIueeG509INpINPly/6aBR7rn1wnlXGgPMMAP4l1uNqyVqP/YzyxpxSCeGMwvUTAM1/Z68p39erO57pxKi4Lq4W7lMBAABgHN8tdWQG
+  </data>
+ </layer>
+ <layer name="Overlay 4 - chimneys" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   eJzt20sOgjAQAFDccAC3HoEtN/MoutSdek4lSoINIgGkRd7bkLSbZiZTpnyyDAAAAACANdpuYq+App18LEYRXJlfM/ZlcA3n+7jl49azduXIeeLbt9RA2xjzuD5if2zE/5Q/xwCGqvaRS7C3EEeVi/MrDwc5ia7ud+r7rP4Hhuk6g3t2Mr+uM3jXXJG950vupjE0H2Uw79kKAMB09LpxfPo+Ra87jTC+bfFujvk+5bfC+LbFWw4AAAAAAJbJu6a0eNf0/9RcWtQcwDq5H6fl238hpEPvBHSxZ6fFnk0f6jYt6hYAAJbrDmlhEW8=
+  </data>
+ </layer>
+ <layer name="Overlay 5 - Top Layer" width="100" height="75">
+  <data encoding="base64" compression="zlib">
+   eJzt1qERADAIBEFUiqX/AvCoGMhMZle+fXMRAAAAAAAAAHvy3G0AAD/pvaN/3vIHAAAAAAAAAAAAAAAAAAAAAAAAwKwCtWUCoQ==
+  </data>
+ </layer>
+ <objectgroup name="Real Impassable Layer">
+  <object id="332" x="1221.95" y="1086.28" width="149.591"/>
+  <object id="333" x="288.718" y="814.419">
+   <polyline points="0,0 2.50334,207.777 34.2123,206.943 34.2123,240.32 67.5901,240.32 67.5901,270.36 93.4579,272.029 93.4579,205.274 128.505,206.108 128.505,272.029 156.876,272.029 156.876,239.486 187.75,241.155 187.75,208.611 217.79,207.777 221.963,-1.66889 0,-2.50334"/>
+  </object>
+  <object id="334" x="704.272" y="1121.5">
+   <polyline points="0,0 -61.749,-1.66889 -60.5892,-192.007 253.346,-190.154 251.168,-2.50334 192.757,-4.17223 192.757,-66.7557 158.545,-65.9212 159.379,-1.66889 33.3778,-0.834446 33.3778,-68.4246 -3.33778,-66.7557 -0.834446,0"/>
+  </object>
+  <object id="342" x="2588.45" y="0">
+   <polyline points="-42.9135,27.8358 -122.764,99.5671 -163.326,107.36 -220.167,166.889 -210.055,197.522 -257.844,201.186 -277.687,228.906 -319.126,231.918 -436.515,347.355 -436.005,401.819 -407.125,405.682 -407.083,427.745 -435.329,423.841 -480.064,390.206 -560.118,462.882 -570.819,505.548 -450.659,506.241 -320.658,659.265 -250.943,732.517 -223.589,712.732 -209.546,720.935 -216.83,774.859 -252.921,773.883 -302.011,738.243 -347.638,732.119 -375.81,702.829 -380.166,612.568 -441.181,574.041 -540.028,574.041 -640.161,673.34 -763.392,750.392 -769.701,833.103 -945.385,998.854 -958.652,1057.65 -1150.21,1207.16 -1150.25,1245.44 -1204.35,1254.62 -1228.97,1345.39 -1306.62,1428.47 -1307.49,1470.88 -1338.19,1490.22 -1335.03,1527.14 -1122.8,1528.3 -1122.8,1662.2 -1155.3,1632.81 -1365.52,1631.14 -1380.99,1602.4 -1478.27,1599.25 -1504.61,1630.63 -1574.88,1631.28 -1637.89,1697.2 -1665.23,1696.88 -1713.73,1748.71 -1726.06,1786.63 -1751.26,1790.01 -1770.92,1764.28 -1806.68,1762.62 -1831.53,1791.86 -1950.43,1792.33 -1998.31,1833.91 -2013.58,1864.7 -2074.05,1864.7 -2046.55,1832.48 -2012.34,1799.62 -1975.87,1756.75 -1898.45,1759.07 -1863.73,1715.76 -1844.72,1693.66 -1806.94,1691.85 -1764.69,1656.11 -1721.69,1601 -1691.91,1571.67 -1645.91,1563.67 -1621.39,1537.31 -1576.18,1531.63 -1559.13,1502.63 -1515.88,1500.58 -1494.7,1470.42 -1469.44,1442.51 -1447.01,1430.02 -1434.17,1373.09 -1356.2,1372.07 -1342.48,1341.85 -1325.79,1344.17 -1307.29,1313.62 -1291.44,1307.82 -1276.13,1277.03 -1311.61,1245.08 -1308.49,1211.72 -1261.85,1208.6 -1151.94,1105.11 -1143.74,1022.58 -1107.96,1023.42 -969.443,886.664 -956.175,828.988 -935.824,826.202 -922.473,769.275 -898.274,755.924 -902.587,709.689 -1086.77,705.7 -1160,645.62 -1198.02,638.986 -1210.78,597.548 -1280.37,597.548 -1293.63,636.341 -1590.54,641.122 -1676.81,548.315 -1780.42,544.977 -1816.3,512.108 -1909.11,513.268 -1938.32,480.216 -2006.09,478.08 -2029.45,450.868 -2070.85,444.052 -2099.36,415.822 -2134.74,413.502 -2159.08,389.628 -2211.51,367.14 -2272.54,329.974 -2305.15,290.387 -2305.15,214.636 -2335.7,193.125 -2349.8,152.704 -2381.51,132.677 -2379.01,92.6235 -2408.21,73.4312 -2412.38,5.00668 -2409.05,2.50334 -2231.23,3.98854 -2233.55,145.944 -2170.37,203.788 -2118.43,257.649 -2081.76,287.039 -2019.83,286.598 -2003.12,313.641 -1957.06,314.035 -1940.66,348.688 -1858.19,351.585 -1841.82,382.601 -1765.51,386.475 -1723.25,420.944 -1682.16,477.802 -1545.66,477.518 -1522.09,509.253 -1421.26,508.928 -1385.32,539.152 -1283.52,535.998 -1279.21,574.099 -1209.95,574.099 -1209.95,524.866 -1104.81,530.708 -1098.97,589.119 -1075.6,592.457 -1053.91,562.417 -1011.35,560.748 -961.282,493.992 -851.969,497.33 -828.605,461.449 -785.214,463.117 -730.975,395.527 -690.087,398.031 -670.895,368.825 -628.338,369.66 -540.721,271.195 -469.793,271.195 -235.314,30.0401 -235.314,2.50334 -231.142,2.50334 -19.1082,1.34352 -42.4099,27.3322"/>
+  </object>
+  <object id="346" x="2387.35" y="832.777">
+   <polyline points="225.006,155.416 200.188,126.604 -6.48685,121.467 -1.46452,82.8672 26.2449,54.7743 -0.0735655,18.6361 -67.9792,18.3795 -96.8016,89.4535 -140.859,90.3565 -153.418,116.891 -207.462,125.74 -242.047,159.175 -245.526,224.068 -211.283,247.022 -224.634,283.302 -241.748,291.688 -256.175,383.845 -224.466,421.395 -226.969,510.681 -284.546,566.589 -296.228,619.993 -310.414,624.166 -329.606,653.371 -374.666,656.709 -395.527,690.087 -504.84,689.252 -523.198,723.465 -631.676,720.961 -650.868,754.339 -671.729,751.836 -685.915,723.465 -783.545,722.63 -808.578,715.12 -806.909,699.266 -822.764,685.915 -842.507,697.187 -842.507,832.394 -804.122,835.874 -778.339,865.22 -626.259,864.245 -603.588,832.536 -522.222,833.696 -466.031,894.101 -467.348,863.169 -497.388,844.785 -484.954,808.804 -458.436,799.992 -404.481,799.158 -373.832,781.876 -302.069,780.207 -281.208,750.167 -237.817,749.332 -218.625,777.704 -141.856,778.538 -133.511,790.22 -121.829,812.75 -75.1001,813.585 -50.9012,781.041 -38.3845,777.704 -23.3645,751.001 33.3778,748.498 94.2924,744.326 134.346,706.776 241.155,712.617 267.857,739.319 302.904,771.028 362.15,803.571 375.501,803.571 399.7,763.518 424.733,730.14 512.35,675.901"/>
+  </object>
+  <object id="347" x="2899.7" y="1509.51">
+   <polyline points="0,0 10.8478,-32.5434 46.729,-43.3912 181.909,-8.34446 187.75,91.7891 224.466,161.048 262.016,188.585 240.32,207.777 216.121,226.135 249.499,296.228 286.215,311.248 278.705,328.772 257.844,337.951 248.665,519.86 221.963,533.211 235.607,799.209 266.647,821.9 254.12,850.759 -160.47,851.169 -211.647,789.337 -328.714,787.527 -344.861,756.193 -598.509,757.424 -600.962,797.906 -531.259,765.728 -369.536,764.572 -282.015,821.334 -324.455,886.222 -576.884,885.07 -596.433,852.614 -683.211,836.043 -651.566,793.188 -678.405,784.415 -691.961,760.953 -717.999,753.541 -716.619,650.957 -690.868,635.454 -682.099,561.641 -654.713,541.053 -654.518,478.508 -662.218,471.798 -673.451,532.991 -713.163,531.464 -720.576,475.863 -743.526,459.267 -746.317,446.077 -758.16,435.005 -779.568,429.676 -777.352,347.964 -785.536,337.663 -793.748,344.948 -797.633,411.416 -804.435,432.18 -874.584,436.515 -890.721,449.357 -891.414,485.931 -905.052,502.918 -918.691,504.391 -918.368,539.662 -903.866,544.088 -881.883,544.473 -876.364,530.029 -875.593,469.949 -864.037,453.196 -831.971,444.789 -788.454,445.399 -766.66,456.183 -754.466,479.709 -728.115,498.999 -729.72,535.939 -715.242,546.948 -700.129,558.434 -697.562,596.117 -704.526,620.764 -719.995,627.313 -728.051,636.331 -729.945,723.401 -739.124,751.324 -754.466,753.539 -774.107,785.472 -1008.81,784.862 -1026.01,812.204 -1046.62,824.116 -1064.21,848.505 -1233.66,851.555 -1249.26,883.81 -1732.93,883.649 -1742.23,863.715 -1755.47,851.267 -1935.94,851.716 -1957.19,883.2 -2164.07,883.425 -2182.78,875.368 -2193.34,852.453 -2209.84,846.324 -2219.34,827.966 -2226.3,818.787 -2243.41,852.936 -2278.36,849.213 -2291.3,822.027 -2311.84,815.898 -2315.52,795.745 -2328.39,788.01 -2348.42,790.514 -2376.38,786.18 -2383.56,761.147 -2408.25,751.87 -2417.97,727.896 -2437.35,718.043 -2452.03,691.388 -2469.11,690.045 -2485.14,702.829 -2504.58,724.908 -2529.21,723.38 -2544.04,696.678 -2550.29,704.797 -2543.7,741.256 -2554.36,784.988 -2593.3,787.166 -2611.76,796.57 -2584.04,812.792 -2584.44,840.146 -2599.75,853.598 -2815.93,853.861 -2837.69,824.716 -2861.19,814.886 -2863.23,785.723 -2835.04,770.052 -2839.68,755.174 -2871.98,760.747 -2893.45,748.13 -2893.45,626.385 -2817.47,536.165 -2604.79,536.816 -2592.22,543.193 -2573.04,571.863 -2535.19,574.267 -2510.44,604.973 -2494.95,580.491 -2465.28,575.668 -2425.98,576.502 -2408.6,551.428 -2378.96,544.284 -2355.93,542.474 -2336.65,515.179 -2323.52,501.87 -2318.52,418.85 -2397.4,420.335 -2472.18,502.903 -2540.95,499.423 -2550.68,464.603 -2671.94,465.07 -2693.63,504.063 -2755.44,501.743 -2768.24,481.984 -2785.58,467.248 -2843.38,467.573 -2856.08,457.927 -2863.09,430.474 -2866.42,408.002 -2894.75,394.184 -2888.49,48.2882 -2860.79,18.6098 -2832.03,-6.1245 -2833.19,-41.2552 -2870.06,-70.526 -2893.54,-82.9272 -2882.37,-122.922 -2834.81,-127.319 -2830.57,-163.337 -2820.14,-187.209 -2767.86,-191.123 -2765.96,-201.481 -2796.2,-211.046 -2798.7,-260.698 -2825.37,-273.36 -2830.56,-418.755 -2863.85,-437.352 -2866.71,-519.342 -2885.61,-526.403 -2894.89,-560.293 -2889.31,-590.88 -2797.87,-677.633 -2820.56,-691.497 -2870.88,-747.756 -2897.2,-760.18 -2898.03,-731.809 -2898.03,835.28 -2898.03,891.188 299.566,889.519 300.401,-59.2457 225.3,-57.5768 219.459,-89.2857 130.174,-90.1202 125.167,-120.16 95.9613,-126.001 88.4513,-191.088 -65.9212,-196.929 -72.5968,-181.075 -123.498,-181.075 -130.174,-126.836 -99.2991,-110.147 -100.134,-100.134 -105.975,-81.7757 -221.128,-82.6101 -234.479,-115.154 -278.705,-116.822 -314.586,-115.988 -327.937,-148.531 -341.288,-151.035 -360.481,-119.326 -383.845,-116.822 -374.666,-101.802 -404.706,-85.9479 -458.945,-90.1202 -471.462,-102.637 -459.78,-114.319 -473.131,-115.154 -494.826,-80.1068 -571.595,-85.1135 -577.437,-113.485 -533.211,-153.538 -515.688,-171.061 -519.025,-240.32 -547.397,-252.003 -565.487,-427.011 -473.698,-486.582 -360.155,-487.049 -295.635,-474.018 -255.797,-437.413 -150.184,-379.206 -147.313,-330.865 -110.557,-304.08 -59.6551,-283.953 -57.2934,-258.185 100.616,-257.492 65.4385,-311.495 43.7849,-342.778 11.5982,-427.294 -84.2947,-522.069 -171.885,-560.002 -188.91,-520.678 -291.726,-522.678"/>
+  </object>
+  <object id="364" x="672.563" y="833.611">
+   <polyline points="0,-19.717 -61.6073,-18.2318 -63.4179,-158.991 32.9371,-193.686 194.641,-193.545 285.239,-160.151 284.221,-22.5877 223.306,-22.1783 216.998,7.67803 134.304,9.16327 129.339,-32.5434 127.67,-35.8812 94.2924,-33.3778 89.9784,8.6542 4.17223,8.32877 4.82299,-22.8711 -1.06014,-20.8768"/>
+  </object>
+  <object id="368" x="224.466" y="997.997" width="28.3712" height="16.6889"/>
+  <object id="385" x="648.364" y="844.459" width="15.8545" height="10.8478">
+   <ellipse/>
+  </object>
+  <object id="386" x="937.917" y="841.956" width="14.1856" height="15.02">
+   <ellipse/>
+  </object>
+  <object id="387" x="1221.63" y="1095.63" width="20.0267" height="17.5234">
+   <ellipse/>
+  </object>
+  <object id="388" x="1126.5" y="1206.61" width="18.3578" height="20.0267">
+   <ellipse/>
+  </object>
+  <object id="410" x="102.637" y="2248" width="18.3578" height="5.84112">
+   <ellipse/>
+  </object>
+  <object id="413" x="462.527" y="1068.95">
+   <ellipse/>
+  </object>
+  <object id="414" x="495.931" y="1059.53">
+   <ellipse/>
+  </object>
+  <object id="415" x="816.274" y="1362.74">
+   <ellipse/>
+  </object>
+  <object id="417" x="1295.93" y="847.109">
+   <ellipse/>
+  </object>
+  <object id="453" x="2.56959" y="746.039">
+   <polyline points="0,0 37.6874,-14.561 47.9657,-54.818 83.8171,-73.5016 148.182,-74.9312 174.522,-114.901 203.768,-175.072 238.189,-206.958 275.696,-170.699 285.778,-294.627 320.536,-298.037 322.269,-268.737 320.343,-264.668 340.899,-271.52 375.161,-309.208 377.177,-392.574 6.03324,-109.277 -6.95894,7.33234"/>
+  </object>
+  <object id="483" x="161.028" y="2240.69">
+   <polyline points="-8.11877,-22.0367 -8.9753,-67.7193 34.8678,-68.2725 35.4744,-25.1595 58.4941,-25.2128 61.0637,-100.074 -55.8178,-99.4674 -55.8711,-22.8398 -7.51218,-22.5899"/>
+  </object>
+  <object id="484" x="2035.12" y="1647.97">
+   <ellipse/>
+  </object>
+  <object id="485" x="2156.75" y="1840.69">
+   <ellipse/>
+  </object>
+  <object id="486" x="1903.21" y="1778.16">
+   <ellipse/>
+  </object>
+  <object id="487" x="1839.83" y="1711.35">
+   <ellipse/>
+  </object>
+  <object id="488" x="1936.62" y="2066.81">
+   <ellipse/>
+  </object>
+  <object id="489" x="1969.16" y="2096.79">
+   <ellipse/>
+  </object>
+  <object id="490" x="2289.51" y="2094.22">
+   <ellipse/>
+  </object>
+  <object id="491" x="624.411" y="833.405">
+   <ellipse/>
+  </object>
+  <object id="525" x="479.657" y="608.137">
+   <polyline points="0,0 0,-65.0964 35.1178,-65.0964 34.2612,-4.28266 35.9743,0 61.6702,0 65.0964,-115.632 -29.9786,-117.345 -29.9786,-3.42612 0,0 0,-27.409"/>
+  </object>
+  <object id="559" x="3173.45" y="788.865">
+   <polyline points="0,0 -103.64,-2.56959 -192.719,-93.3619 -200.428,-96.788 -296.36,-96.788 -325.482,-129.336 -392.291,-129.336 -454.818,-197.859 -489.936,-193.576 -519.058,-227.837 -550.749,-229.55 -566.167,-233.833 -572.163,-240.685 -569.593,-342.612 -602.998,-374.304 -601.285,-411.135 -581.585,-429.979 -573.019,-427.409 -567.024,-479.657 -556.745,-489.936 -543.041,-493.362 -525.054,-523.34 -507.066,-523.34 -511.349,-543.897 -535.332,-553.319 -538.758,-571.306 -538.758,-632.976 -522.484,-652.677 -508.779,-652.677 -504.497,-660.385 -364.882,-661.242 -373.448,-585.867 -418.844,-577.302 -435.974,-553.319 -429.122,-537.045 -445.396,-512.206 -464.24,-507.066 -469.379,-492.505 -459.957,-478.801 -477.944,-447.109 -509.636,-451.392 -528.48,-442.827 -531.906,-423.983 -524.197,-411.991 -538.758,-387.152 -552.463,-382.869 -567.024,-360.6 -556.745,-359.743 -543.897,-365.739 -531.049,-352.034 -529.336,-336.617 -527.623,-301.499 -503.64,-297.216 -492.505,-269.807 -382.869,-268.094 -365.739,-240.685 -290.364,-234.69 -273.233,-219.272 -268.951,-202.141 -126.767,-202.141"/>
+  </object>
+  <object id="560" x="2663.81" y="453.961" width="16.2741" height="23.1263">
+   <ellipse/>
+  </object>
+  <object id="565" x="2670.66" y="135.332">
+   <polyline points="0,0 -35.9743,-41.97 0,-77.9443 11.1349,-94.2184 27.409,-92.5054 27.409,-133.619 33.4047,-134.475 75.3747,-135.332 267.238,-134.475 263.812,-98.5011 186.724,-25.6959 147.323,-21.4133 125.91,-5.99572 0,-0.856531"/>
+  </object>
+  <object id="566" x="3044.57" y="587.549" width="19.6464" height="38.0648"/>
+  <object id="567" x="3059.92" y="615.791" width="147.962" height="169.45"/>
+  <object id="571" x="1279" y="2111.52">
+   <polyline points="-6.95894,-16.2375 -3.93616,-67.2184 40.7094,-68.3782 39.5496,-19.717 94.9234,-20.1737 93.0966,-93.6031 -56.0769,-90.8276 -56.9902,-16.0273 -8.11877,-18.8036"/>
+  </object>
+  <object id="572" x="1347.21" y="2304.18">
+   <polyline points="0,-16.2375 -0.0362089,-92.6905 87.0149,-90.8276 89.0881,-19.0501 66.2688,-20.6666 65.8121,-68.6247 21.3767,-69.7845 23.4861,-18.5572 -2.31965,-20.8768"/>
+  </object>
+  <object id="573" x="90.6162" y="2302.32" width="12.0822" height="27.5205">
+   <ellipse/>
+  </object>
+  <object id="574" x="932.498" y="1765.25">
+   <polyline points="0,0 119.462,0 119.462,69.5894 97.4252,69.5894 98.585,22.0367 51.0322,23.1965 52.1921,69.5894 -1.15982,68.4296 -1.15982,1.15982 0,1.15982"/>
+  </object>
+  <object id="575" x="1156.34" y="1223.61" width="85.827" height="69.5894"/>
+  <object id="578" x="1026.44" y="1208.54" width="89.3064" height="169.334"/>
+  <object id="579" x="836.233" y="1224.77" width="120.622" height="158.896"/>
+  <object id="582" x="1275.81" y="1070.52">
+   <polyline points="0,0 -1.15982,-52.1921 42.9135,-51.0322 39.434,-2.31965 96.2654,-2.31965 92.7859,-80.0278 -54.5117,-80.0278 -55.6715,-4.63929 -1.15982,-4.63929"/>
+  </object>
+  <object id="584" x="1028.76" y="963.814">
+   <polyline points="0,0 183.252,0 180.932,134.54 128.74,134.54 127.581,77.7082 54.5117,78.868 55.6715,134.54 3.47947,134.54 1.15982,2.31965"/>
+  </object>
+  <object id="585" x="700.534" y="1389.47">
+   <polyline points="-3.47947,-3.47947 -4.63929,-54.5117 39.434,-54.5117 41.7537,-1.15982 93.9457,-1.15982 96.2654,-164.695 -57.9912,-164.695 -57.9912,-3.47947 -6.95894,-4.63929"/>
+  </object>
+  <object id="588" x="470.888" y="4.63929">
+   <polyline points="0,0 1.15982,122.941 68.4296,126.421 69.5894,189.051 162.375,187.891 164.695,219.207 230.805,221.526 230.805,249.362 320.111,250.522 328.23,237.764 367.664,237.764 376.943,250.522 427.975,248.202 427.975,-4.63929 0,-3.47947 0,15.0777"/>
+  </object>
+  <object id="589" x="1315.24" y="366.504">
+   <polyline points="-1.15982,1.15982 -1.15982,-74.2287 19.717,-95.1055 37.1144,-93.9457 60.3108,-74.2287 57.9912,-1.15982 327.07,0 364.185,3.47947 411.737,-13.9179 411.737,-329.39 398.979,-366.504 -344.468,-365.344 -354.906,-336.349 -356.066,-15.0777 -311.993,5.79912 -270.239,1.15982 -2.31965,3.47947"/>
+  </object>
+  <object id="590" x="1111.11" y="847.831">
+   <polyline points="0,0 1.15982,-70.7492 80.0278,-69.5894 80.0278,-3.47947 164.695,-3.47947 167.015,-140.339 -82.3475,-140.339 -84.6671,-2.31965 2.31965,0"/>
+  </object>
+  <object id="594" x="1540.25" y="1827.88" width="85.827" height="67.2698"/>
+  <object id="599" x="2490.14" y="1108.79">
+   <polyline points="0,0 -4.63929,18.5572 2.31965,46.3929 18.5572,53.3519 46.3929,52.1921 52.1921,30.1554 52.1921,10.4384 41.7537,-2.31965 38.2742,45.2331 5.79912,45.2331 4.54747e-13,2.31965"/>
+  </object>
+  <object id="600" x="2515.66" y="1377.87">
+   <polyline points="0,0 0,-113.663 102.064,-106.704 85.827,-140.339 -55.6715,-142.658 -71.9091,-106.704 -74.2287,-5.79912 0,-1.15982"/>
+  </object>
+  <object id="605" x="1026.44" y="1987.94" width="89.3064" height="69.5894"/>
+  <object id="606" x="1115.75" y="2057.53"/>
+  <object id="608" x="1774.53" y="213.408">
+   <ellipse/>
+  </object>
+  <object id="609" x="1871.96" y="180.932">
+   <ellipse/>
+  </object>
+  <object id="610" x="1809.32" y="83.5073">
+   <ellipse/>
+  </object>
+  <object id="611" x="2063.33" y="119.462" height="1.15982">
+   <ellipse/>
+  </object>
+  <object id="612" x="2063.33" y="120.622">
+   <ellipse/>
+  </object>
+  <object id="613" x="2254.7" y="56.8314">
+   <ellipse/>
+  </object>
+  <object id="614" x="2063.33" y="978.891">
+   <ellipse/>
+  </object>
+  <object id="615" x="2160.75" y="920.9">
+   <ellipse/>
+  </object>
+  <object id="617" x="1775.69" y="949.896">
+   <ellipse/>
+  </object>
+  <object id="618" x="1551.84" y="1203.9">
+   <ellipse/>
+  </object>
+  <object id="619" x="1680.58" y="1244.49">
+   <ellipse/>
+  </object>
+  <object id="620" x="1583.16" y="1337.28">
+   <ellipse/>
+  </object>
+  <object id="622" x="1840.64" y="1525.17">
+   <ellipse/>
+  </object>
+  <object id="623" x="1646.95" y="1489.21">
+   <ellipse/>
+  </object>
+  <object id="624" x="2063.33" y="1431.22">
+   <ellipse/>
+  </object>
+  <object id="625" x="2129.44" y="1302.48">
+   <ellipse/>
+  </object>
+  <object id="627" x="1358.15" y="1495.01">
+   <ellipse/>
+  </object>
+  <object id="629" x="1392.95" y="1399.91">
+   <ellipse/>
+  </object>
+  <object id="630" x="1520.53" y="2166.55">
+   <ellipse/>
+  </object>
+  <object id="631" x="1646.95" y="2263.98">
+   <ellipse/>
+  </object>
+  <object id="632" x="1775.69" y="2230.34">
+   <ellipse/>
+  </object>
+  <object id="633" x="1584.32" y="2070.29">
+   <ellipse/>
+  </object>
+  <object id="634" x="2509.86" y="2094.64">
+   <ellipse/>
+  </object>
+  <object id="635" x="2542.33" y="1878.91">
+   <ellipse/>
+  </object>
+  <object id="636" x="2478.54" y="1775.69">
+   <ellipse/>
+  </object>
+  <object id="637" x="2448.39" y="1710.74">
+   <ellipse/>
+  </object>
+  <object id="638" x="2379.96" y="1751.33">
+   <ellipse/>
+  </object>
+  <object id="639" x="2798.65" y="2038.97">
+   <ellipse/>
+  </object>
+  <object id="640" x="2574.81" y="2200.19">
+   <ellipse/>
+  </object>
+  <object id="641" x="2638.6" y="2035.49">
+   <ellipse/>
+  </object>
+  <object id="642" x="1583.16" y="2224.54">
+   <ellipse/>
+  </object>
+  <object id="643" x="1648.11" y="2065.65">
+   <ellipse/>
+  </object>
+  <object id="645" x="1714.22" y="1999.54">
+   <ellipse/>
+  </object>
+  <object id="646" x="1680.58" y="1970.54">
+   <ellipse/>
+  </object>
+  <object id="647" x="1614.47" y="1934.59">
+   <ellipse/>
+  </object>
+  <object id="650" x="1636.51" y="1893.99" width="20.8768" height="48.7126">
+   <ellipse/>
+  </object>
+  <object id="652" x="1489.21" y="1956.62">
+   <ellipse/>
+  </object>
+  <object id="653" x="1520.53" y="1929.95">
+   <ellipse/>
+  </object>
+  <object id="655" x="1385.99" y="2026.21" width="30.1554" height="38.2742">
+   <ellipse/>
+  </object>
+  <object id="656" x="1392.95" y="2081.88">
+   <ellipse/>
+  </object>
+  <object id="659" x="1025.28" y="1969.38">
+   <ellipse/>
+  </object>
+  <object id="660" x="1012.53" y="1986.78">
+   <ellipse/>
+  </object>
+  <object id="661" x="913.941" y="1838.32">
+   <ellipse/>
+  </object>
+  <object id="664" x="1069.36" y="1780.33">
+   <ellipse/>
+  </object>
+  <object id="665" x="1056.6" y="1743.22">
+   <ellipse/>
+  </object>
+  <object id="666" x="1166.78" y="1653.91">
+   <ellipse/>
+  </object>
+  <object id="667" x="1711.9" y="1747.85">
+   <ellipse/>
+  </object>
+  <object id="668" x="752.726" y="1849.92">
+   <ellipse/>
+  </object>
+  <object id="669" x="591.51" y="2071.45">
+   <ellipse/>
+  </object>
+  <object id="670" x="623.985" y="2296.45">
+   <ellipse/>
+  </object>
+  <object id="671" x="273.718" y="2132.92">
+   <ellipse/>
+  </object>
+  <object id="672" x="51.0322" y="2170.03">
+   <ellipse/>
+  </object>
+  <object id="673" x="75.3885" y="2160.75" width="22.0367" height="28.9956">
+   <ellipse/>
+  </object>
+  <object id="674" x="240.084" y="1849.92">
+   <ellipse/>
+  </object>
+  <object id="676" x="337.509" y="1753.65">
+   <ellipse/>
+  </object>
+  <object id="677" x="528.88" y="1751.33">
+   <ellipse/>
+  </object>
+  <object id="679" x="48.7126" y="1751.33">
+   <ellipse/>
+  </object>
+  <object id="682" x="112.503" y="1588.96">
+   <ellipse/>
+  </object>
+  <object id="684" x="401.299" y="1526.33">
+   <ellipse/>
+  </object>
+  <object id="685" x="206.449" y="1421.94">
+   <ellipse/>
+  </object>
+  <object id="686" x="241.243" y="1455.58">
+   <ellipse/>
+  </object>
+  <object id="687" x="690.095" y="1586.64">
+   <ellipse/>
+  </object>
+  <object id="688" x="722.57" y="1550.68">
+   <ellipse/>
+  </object>
+  <object id="689" x="847.831" y="1524.01">
+   <ellipse/>
+  </object>
+  <object id="690" x="720.251" y="1526.33" height="1.15982">
+   <ellipse/>
+  </object>
+  <object id="691" x="720.251" y="1527.49">
+   <ellipse/>
+  </object>
+  <object id="692" x="656.46" y="1617.95">
+   <ellipse/>
+  </object>
+  <object id="693" x="784.041" y="1586.64">
+   <ellipse/>
+  </object>
+  <object id="694" x="206.449" y="1811.64">
+   <ellipse/>
+  </object>
+  <object id="697" x="816.516" y="1249.13">
+   <ellipse/>
+  </object>
+  <object id="698" x="142.658" y="1231.73">
+   <ellipse/>
+  </object>
+  <object id="699" x="144.978" y="1076.32">
+   <ellipse/>
+  </object>
+  <object id="700" x="78.868" y="985.85">
+   <ellipse/>
+  </object>
+  <object id="701" x="336.349" y="1267.69">
+   <ellipse/>
+  </object>
+  <object id="702" x="299.235" y="1237.53">
+   <ellipse/>
+  </object>
+  <object id="703" x="527.72" y="1302.48">
+   <ellipse/>
+  </object>
+  <object id="704" x="462.77" y="1431.22">
+   <ellipse/>
+  </object>
+  <object id="705" x="208.768" y="1367.43">
+   <ellipse/>
+  </object>
+  <object id="706" x="270.239" y="1395.27">
+   <ellipse/>
+  </object>
+  <object id="708" x="144.978" y="883.786">
+   <ellipse/>
+  </object>
+  <object id="710" x="143.818" y="756.205">
+   <ellipse/>
+  </object>
+  <object id="711" x="237.764" y="755.045">
+   <ellipse/>
+  </object>
+  <object id="712" x="78.868" y="751.566">
+   <ellipse/>
+  </object>
+  <object id="713" x="209.928" y="661.1">
+   <ellipse/>
+  </object>
+  <object id="714" x="272.559" y="590.35">
+   <ellipse/>
+  </object>
+  <object id="715" x="302.714" y="591.51">
+   <ellipse/>
+  </object>
+  <object id="716" x="366.504" y="599.629">
+   <ellipse/>
+  </object>
+  <object id="717" x="397.82" y="589.19" width="32.4751" height="31.3152">
+   <ellipse/>
+  </object>
+  <object id="718" x="432.614" y="555.556">
+   <ellipse/>
+  </object>
+  <object id="719" x="432.614" y="540.478">
+   <ellipse/>
+  </object>
+  <object id="720" x="335.189" y="502.204">
+   <ellipse/>
+  </object>
+  <object id="721" x="369.984" y="463.929">
+   <ellipse/>
+  </object>
+  <object id="722" x="175.133" y="720.251">
+   <ellipse/>
+  </object>
+  <object id="724" x="912.781" y="839.712">
+   <ellipse/>
+  </object>
+  <object id="725" x="944.096" y="835.073">
+   <ellipse/>
+  </object>
+  <object id="727" x="1294.36" y="808.397">
+   <ellipse/>
+  </object>
+  <object id="729" x="1296.68" y="760.844">
+   <ellipse/>
+  </object>
+  <object id="730" x="1485.73" y="758.525">
+   <ellipse/>
+  </object>
+  <object id="731" x="1518.21" y="815.356">
+   <ellipse/>
+  </object>
+  <object id="732" x="1584.32" y="853.63">
+   <ellipse/>
+  </object>
+  <object id="733" x="1779.17" y="305.034">
+   <ellipse/>
+  </object>
+  <object id="734" x="1773.37" y="271.399">
+   <ellipse/>
+  </object>
+  <object id="735" x="1776.85" y="238.924">
+   <ellipse/>
+  </object>
+  <object id="736" x="1807.01" y="241.243">
+   <ellipse/>
+  </object>
+  <object id="739" x="1840.64" y="271.399">
+   <ellipse/>
+  </object>
+  <object id="740" x="1840.64" y="240.084">
+   <ellipse/>
+  </object>
+  <object id="741" x="1869.64" y="272.559">
+   <ellipse/>
+  </object>
+  <object id="742" x="1905.59" y="238.924">
+   <ellipse/>
+  </object>
+  <object id="743" x="1938.07" y="238.924">
+   <ellipse/>
+  </object>
+  <object id="744" x="1968.22" y="238.924">
+   <ellipse/>
+  </object>
+  <object id="745" x="1938.07" y="173.974">
+   <ellipse/>
+  </object>
+  <object id="746" x="1903.27" y="177.453">
+   <ellipse/>
+  </object>
+  <object id="747" x="1839.48" y="177.453">
+   <ellipse/>
+  </object>
+  <object id="748" x="1805.85" y="141.498">
+   <ellipse/>
+  </object>
+  <object id="749" x="1744.37" y="141.498">
+   <ellipse/>
+  </object>
+  <object id="750" x="1935.75" y="146.138">
+   <ellipse/>
+  </object>
+  <object id="751" x="1968.22" y="143.818">
+   <ellipse/>
+  </object>
+  <object id="752" x="1999.54" y="178.613">
+   <ellipse/>
+  </object>
+  <object id="753" x="2032.01" y="177.453">
+   <ellipse/>
+  </object>
+  <object id="754" x="2061.01" y="177.453">
+   <ellipse/>
+  </object>
+  <object id="755" x="2095.8" y="180.932">
+   <ellipse/>
+  </object>
+  <object id="756" x="2131.76" y="146.138">
+   <ellipse/>
+  </object>
+  <object id="757" x="2161.91" y="114.823">
+   <ellipse/>
+  </object>
+  <object id="758" x="2189.75" y="78.868">
+   <ellipse/>
+  </object>
+  <object id="759" x="2195.55" y="45.2331">
+   <ellipse/>
+  </object>
+  <object id="760" x="2158.43" y="15.0777">
+   <ellipse/>
+  </object>
+  <object id="761" x="1868.48" y="144.978">
+   <ellipse/>
+  </object>
+  <object id="762" x="1839.48" y="84.6671">
+   <ellipse/>
+  </object>
+  <object id="763" x="1964.74" y="113.663">
+   <ellipse/>
+  </object>
+  <object id="764" x="1998.38" y="113.663">
+   <ellipse/>
+  </object>
+  <object id="765" x="2065.65" y="144.978">
+   <ellipse/>
+  </object>
+  <object id="766" x="2096.96" y="115.982">
+   <ellipse/>
+  </object>
+  <object id="767" x="2128.28" y="81.1877">
+   <ellipse/>
+  </object>
+  <object id="768" x="2157.27" y="77.7082">
+   <ellipse/>
+  </object>
+  <object id="769" x="2124.8" y="48.7126">
+   <ellipse/>
+  </object>
+  <object id="770" x="2129.44" y="18.5572">
+   <ellipse/>
+  </object>
+  <object id="772" x="2095.8" y="47.5528">
+   <ellipse/>
+  </object>
+  <object id="773" x="2032.01" y="81.1877">
+   <ellipse/>
+  </object>
+  <object id="775" x="2032.01" y="47.5528">
+   <ellipse/>
+  </object>
+  <object id="776" x="1999.54" y="81.1877">
+   <ellipse/>
+  </object>
+  <object id="777" x="1968.22" y="49.8724">
+   <ellipse/>
+  </object>
+  <object id="778" x="2001.86" y="17.3974">
+   <ellipse/>
+  </object>
+  <object id="779" x="1933.43" y="16.2375">
+   <ellipse/>
+  </object>
+  <object id="780" x="1874.28" y="15.0777">
+   <ellipse/>
+  </object>
+  <object id="781" x="1842.96" y="51.0322">
+   <ellipse/>
+  </object>
+  <object id="782" x="1776.85" y="84.6671">
+   <ellipse/>
+  </object>
+  <object id="783" x="1776.85" y="48.7126">
+   <ellipse/>
+  </object>
+  <object id="784" x="1745.53" y="81.1877">
+   <ellipse/>
+  </object>
+  <object id="785" x="1907.91" y="80.0278">
+   <ellipse/>
+  </object>
+  <object id="786" x="1907.91" y="52.1921">
+   <ellipse/>
+  </object>
+  <object id="787" x="1936.91" y="80.0278">
+   <ellipse/>
+  </object>
+  <object id="788" x="2224.54" y="17.3974">
+   <ellipse/>
+  </object>
+  <object id="789" x="2257.02" y="487.126">
+   <ellipse/>
+  </object>
+  <object id="791" x="2349.8" y="620.506">
+   <ellipse/>
+  </object>
+  <object id="792" x="2415.91" y="619.346">
+   <ellipse/>
+  </object>
+  <object id="793" x="2482.02" y="778.242">
+   <ellipse/>
+  </object>
+  <object id="794" x="2575.97" y="879.146">
+   <ellipse/>
+  </object>
+  <object id="795" x="2896.08" y="911.621">
+   <ellipse/>
+  </object>
+  <object id="796" x="3023.66" y="1260.73">
+   <ellipse/>
+  </object>
+  <object id="797" x="3154.72" y="1231.73">
+   <ellipse/>
+  </object>
+  <object id="798" x="3182.56" y="1134.31">
+   <ellipse/>
+  </object>
+  <object id="799" x="3182.56" y="1043.84">
+   <ellipse/>
+  </object>
+  <object id="800" x="3150.08" y="1010.21">
+   <ellipse/>
+  </object>
+  <object id="803" x="3151.24" y="1067.04">
+   <ellipse/>
+  </object>
+  <object id="804" x="3118.77" y="1102.99">
+   <ellipse/>
+  </object>
+  <object id="805" x="2736.02" y="917.421">
+   <ellipse/>
+  </object>
+  <object id="806" x="2540.01" y="722.57">
+   <ellipse/>
+  </object>
+  <object id="807" x="2542.33" y="592.67">
+   <ellipse/>
+  </object>
+  <object id="809" x="2639.76" y="622.825">
+   <ellipse/>
+  </object>
+  <object id="810" x="2606.12" y="557.875">
+   <ellipse/>
+  </object>
+  <object id="811" x="2509.86" y="527.72">
+   <ellipse/>
+  </object>
+  <object id="812" x="2446.07" y="494.085">
+   <ellipse/>
+  </object>
+  <object id="813" x="2444.91" y="429.135">
+   <ellipse/>
+  </object>
+  <object id="814" x="2349.8" y="429.135">
+   <ellipse/>
+  </object>
+  <object id="815" x="2480.86" y="432.614">
+   <ellipse/>
+  </object>
+  <object id="816" x="2317.33" y="352.586">
+   <ellipse/>
+  </object>
+  <object id="817" x="3023.66" y="441.893">
+   <ellipse/>
+  </object>
+  <object id="818" x="3089.77" y="410.578">
+   <ellipse/>
+  </object>
+  <object id="819" x="3151.24" y="475.528">
+   <ellipse/>
+  </object>
+  <object id="820" x="3184.88" y="440.733">
+   <ellipse/>
+  </object>
+  <object id="821" x="2958.71" y="405.938">
+   <ellipse/>
+  </object>
+  <object id="822" x="2896.08" y="309.673">
+   <ellipse/>
+  </object>
+  <object id="824" x="2991.19" y="180.932">
+   <ellipse/>
+  </object>
+  <object id="826" x="3087.45" y="148.457">
+   <ellipse/>
+  </object>
+  <object id="827" x="3119.93" y="118.302">
+   <ellipse/>
+  </object>
+  <object id="828" x="3151.24" y="82.3475">
+   <ellipse/>
+  </object>
+  <object id="829" x="3024.82" y="111.343">
+   <ellipse/>
+  </object>
+  <object id="830" x="2928.55" y="247.042">
+   <ellipse/>
+  </object>
+  <object id="831" x="2927.4" y="212.248">
+   <ellipse/>
+  </object>
+  <object id="832" x="2703.55" y="1174.9">
+   <ellipse/>
+  </object>
+  <object id="837" x="2639.76" y="1136.63">
+   <ellipse/>
+  </object>
+  <object id="838" x="2577.13" y="1112.27">
+   <ellipse/>
+  </object>
+  <object id="840" x="2542.33" y="1074">
+   <ellipse/>
+  </object>
+  <object id="842" x="2477.38" y="1042.68">
+   <ellipse/>
+  </object>
+  <object id="844" x="2415.91" y="1074">
+   <ellipse/>
+  </object>
+  <object id="845" x="2383.44" y="1104.15">
+   <ellipse/>
+  </object>
+  <object id="846" x="2383.44" y="1232.89">
+   <ellipse/>
+  </object>
+  <object id="847" x="2415.91" y="1265.37">
+   <ellipse/>
+  </object>
+  <object id="848" x="2413.59" y="1328">
+   <ellipse/>
+  </object>
+  <object id="849" x="2414.75" y="1361.63">
+   <ellipse/>
+  </object>
+  <object id="850" x="2382.28" y="1395.27">
+   <ellipse/>
+  </object>
+  <object id="851" x="2545.81" y="1336.12">
+   <ellipse/>
+  </object>
+  <object id="852" x="2606.12" y="1330.32">
+   <ellipse/>
+  </object>
+  <object id="853" x="2639.76" y="1332.64">
+   <ellipse/>
+  </object>
+  <object id="854" x="2607.28" y="1363.95">
+   <ellipse/>
+  </object>
+  <object id="855" x="2671.07" y="1361.63">
+   <ellipse/>
+  </object>
+  <object id="859" x="2702.39" y="1750.17">
+   <ellipse/>
+  </object>
+  <object id="860" x="2797.49" y="1713.06">
+   <ellipse/>
+  </object>
+  <object id="861" x="2799.81" y="1781.49">
+   <ellipse/>
+  </object>
+  <object id="862" x="2862.44" y="1783.81">
+   <ellipse/>
+  </object>
+  <object id="863" x="2894.92" y="1746.69">
+   <ellipse/>
+  </object>
+  <object id="864" x="2896.08" y="1718.86">
+   <ellipse/>
+  </object>
+  <object id="865" x="2926.24" y="1817.44">
+   <ellipse/>
+  </object>
+  <object id="866" x="2959.87" y="1813.96">
+   <ellipse/>
+  </object>
+  <object id="867" x="3021.34" y="1717.7">
+   <ellipse/>
+  </object>
+  <object id="868" x="3053.82" y="1684.06">
+   <ellipse/>
+  </object>
+  <object id="869" x="3056.14" y="1621.43">
+   <ellipse/>
+  </object>
+  <object id="870" x="2992.35" y="1591.28">
+   <ellipse/>
+  </object>
+  <object id="871" x="2928.55" y="1621.43">
+   <ellipse/>
+  </object>
+  <object id="872" x="3119.93" y="1685.22">
+   <ellipse/>
+  </object>
+  <object id="873" x="3056.14" y="1556.48">
+   <ellipse/>
+  </object>
+  <object id="875" x="3023.66" y="1529.81">
+   <ellipse/>
+  </object>
+  <object id="876" x="2991.19" y="1524.01">
+   <ellipse/>
+  </object>
+  <object id="877" x="2927.4" y="1524.01">
+   <ellipse/>
+  </object>
+  <object id="878" x="2863.6" y="1587.8">
+   <ellipse/>
+  </object>
+  <object id="879" x="2832.29" y="1620.27">
+   <ellipse/>
+  </object>
+  <object id="880" x="2798.65" y="1653.91">
+   <ellipse/>
+  </object>
+  <object id="881" x="3088.61" y="1781.49">
+   <ellipse/>
+  </object>
+  <object id="882" x="3088.61" y="1747.85">
+   <ellipse/>
+  </object>
+  <object id="883" x="3088.61" y="1715.38">
+   <ellipse/>
+  </object>
+  <object id="884" x="3088.61" y="1685.22">
+   <ellipse/>
+  </object>
+  <object id="886" x="3121.09" y="1847.6">
+   <ellipse/>
+  </object>
+  <object id="887" x="3121.09" y="1907.91">
+   <ellipse/>
+  </object>
+  <object id="888" x="3123.41" y="1975.18">
+   <ellipse/>
+  </object>
+  <object id="889" x="3053.82" y="1977.5">
+   <ellipse/>
+  </object>
+  <object id="892" x="3021.34" y="1911.39">
+   <ellipse/>
+  </object>
+  <object id="893" x="2992.35" y="1846.44">
+   <ellipse/>
+  </object>
+  <object id="894" x="3053.82" y="1844.12">
+   <ellipse/>
+  </object>
+  <object id="895" x="2961.03" y="1909.07">
+   <ellipse/>
+  </object>
+  <object id="896" x="2958.71" y="1877.75">
+   <ellipse/>
+  </object>
+  <object id="897" x="2832.29" y="1845.28">
+   <ellipse/>
+  </object>
+  <object id="898" x="2797.49" y="1845.28">
+   <ellipse/>
+  </object>
+  <object id="899" x="2765.02" y="1845.28">
+   <ellipse/>
+  </object>
+  <object id="900" x="2734.86" y="1842.96">
+   <ellipse/>
+  </object>
+  <object id="901" x="2608.44" y="1591.28">
+   <ellipse/>
+  </object>
+  <object id="902" x="2671.07" y="1653.91">
+   <ellipse/>
+  </object>
+  <object id="903" x="2672.23" y="1623.75">
+   <ellipse/>
+  </object>
+  <object id="904" x="2705.87" y="1685.22">
+   <ellipse/>
+  </object>
+  <object id="905" x="2733.7" y="1685.22">
+   <ellipse/>
+  </object>
+  <object id="906" x="2638.6" y="1684.06">
+   <ellipse/>
+  </object>
+  <object id="907" x="2637.44" y="1716.54">
+   <ellipse/>
+  </object>
+  <object id="908" x="2672.23" y="1721.18">
+   <ellipse/>
+  </object>
+  <object id="909" x="2444.91" y="1624.91">
+   <ellipse/>
+  </object>
+  <object id="910" x="2478.54" y="1652.75">
+   <ellipse/>
+  </object>
+  <object id="911" x="2479.7" y="1685.22">
+   <ellipse/>
+  </object>
+  <object id="912" x="2513.34" y="1716.54">
+   <ellipse/>
+  </object>
+  <object id="913" x="2546.97" y="1686.38">
+   <ellipse/>
+  </object>
+  <object id="914" x="2544.65" y="1753.65">
+   <ellipse/>
+  </object>
+  <object id="915" x="2575.97" y="1784.97">
+   <ellipse/>
+  </object>
+  <object id="916" x="2610.76" y="1811.64">
+   <ellipse/>
+  </object>
+  <object id="917" x="2609.6" y="1847.6">
+   <ellipse/>
+  </object>
+  <object id="918" x="2637.44" y="1878.91">
+   <ellipse/>
+  </object>
+  <object id="920" x="2669.91" y="1811.64">
+   <ellipse/>
+  </object>
+  <object id="921" x="2672.23" y="1875.43">
+   <ellipse/>
+  </object>
+  <object id="922" x="2703.55" y="1909.07">
+   <ellipse/>
+  </object>
+  <object id="925" x="2671.07" y="1971.7">
+   <ellipse/>
+  </object>
+  <object id="926" x="2701.23" y="2004.18">
+   <ellipse/>
+  </object>
+  <object id="927" x="2736.02" y="1974.02">
+   <ellipse/>
+  </object>
+  <object id="928" x="2768.5" y="1940.39">
+   <ellipse/>
+  </object>
+  <object id="929" x="2832.29" y="1940.39">
+   <ellipse/>
+  </object>
+  <object id="930" x="2798.65" y="2005.34">
+   <ellipse/>
+  </object>
+  <object id="931" x="2863.6" y="2071.45">
+   <ellipse/>
+  </object>
+  <object id="933" x="2988.87" y="2000.7">
+   <ellipse/>
+  </object>
+  <object id="934" x="2925.08" y="1972.86">
+   <ellipse/>
+  </object>
+  <object id="935" x="2959.87" y="2037.81">
+   <ellipse/>
+  </object>
+  <object id="936" x="2957.55" y="2071.45">
+   <ellipse/>
+  </object>
+  <object id="937" x="2923.92" y="2095.8">
+   <ellipse/>
+  </object>
+  <object id="938" x="2928.55" y="2070.29">
+   <ellipse/>
+  </object>
+  <object id="939" x="3087.45" y="2070.29">
+   <ellipse/>
+  </object>
+  <object id="940" x="3057.3" y="2134.08">
+   <ellipse/>
+  </object>
+  <object id="941" x="3087.45" y="2167.71">
+   <ellipse/>
+  </object>
+  <object id="942" x="2992.35" y="2166.55">
+   <ellipse/>
+  </object>
+  <object id="943" x="2957.55" y="2164.23">
+   <ellipse/>
+  </object>
+  <object id="944" x="2897.24" y="2165.39">
+   <ellipse/>
+  </object>
+  <object id="945" x="2829.97" y="2164.23">
+   <ellipse/>
+  </object>
+  <object id="946" x="2766.18" y="2164.23">
+   <ellipse/>
+  </object>
+  <object id="947" x="2733.7" y="2135.24">
+   <ellipse/>
+  </object>
+  <object id="948" x="2702.39" y="2168.87">
+   <ellipse/>
+  </object>
+  <object id="949" x="2736.02" y="2230.34">
+   <ellipse/>
+  </object>
+  <object id="950" x="2767.34" y="2195.55">
+   <ellipse/>
+  </object>
+  <object id="951" x="2800.97" y="2230.34">
+   <ellipse/>
+  </object>
+  <object id="952" x="2829.97" y="2229.18">
+   <ellipse/>
+  </object>
+  <object id="953" x="2864.76" y="2258.18">
+   <ellipse/>
+  </object>
+  <object id="954" x="2766.18" y="2295.29">
+   <ellipse/>
+  </object>
+  <object id="955" x="2798.65" y="2324.29">
+   <ellipse/>
+  </object>
+  <object id="956" x="2863.6" y="2327.77">
+   <ellipse/>
+  </object>
+  <object id="957" x="2928.55" y="2294.13">
+   <ellipse/>
+  </object>
+  <object id="958" x="2962.19" y="2328.93">
+   <ellipse/>
+  </object>
+  <object id="959" x="2992.35" y="2260.5">
+   <ellipse/>
+  </object>
+  <object id="960" x="3021.34" y="2326.61">
+   <ellipse/>
+  </object>
+  <object id="961" x="3058.46" y="2326.61">
+   <ellipse/>
+  </object>
+  <object id="962" x="3087.45" y="2325.45">
+   <ellipse/>
+  </object>
+  <object id="963" x="3089.77" y="2259.34">
+   <ellipse/>
+  </object>
+  <object id="965" x="303.874" y="656.46">
+   <ellipse/>
+  </object>
+  <object id="966" x="1601.72" y="1123.87">
+   <polyline points="0,0 0,88.1466 33.6349,126.421 33.6349,151.937 61.4707,185.572 96.2654,186.732 157.736,249.362 219.207,250.522 250.522,218.047 250.522,189.051 218.047,153.097 190.211,156.576 124.101,93.9457 125.261,61.4707 93.9457,32.4751 92.7859,-32.4751 126.421,-99.7448 128.74,-133.38 192.531,-162.375 220.367,-164.695 256.321,-196.01 255.161,-260.96 215.727,-287.636 -24.3563,-22.0367 -1.15982,2.31965 2.31965,27.8358"/>
+  </object>
+  <object id="967" x="1953.14" y="867.548">
+   <polyline points="0,0 -27.8358,30.1554 -27.8358,57.9912 0,84.6671 48.7126,92.7859 95.1055,143.818 95.1055,179.773 126.421,206.449 126.421,302.714 98.585,320.111 95.1055,361.865 46.3929,412.897 2.31965,415.217 -27.8358,448.852 -27.8358,503.664 21.6758,507.513 28.9956,527.72 60.3108,528.88 80.0278,508.003 146.138,508.003 162.375,531.199 201.809,474.368 202.969,378.103 167.015,360.705 169.334,234.284 194.85,219.207 167.015,198.33 165.855,121.781 206.449,122.941 158.896,91.6261 117.142,90.4662 59.151,28.9956 16.2375,27.8358 0,0"/>
+  </object>
+  <object id="968" x="1904.43" y="757.365">
+   <ellipse/>
+  </object>
+  <object id="969" x="2095.8" y="663.419">
+   <ellipse/>
+  </object>
+  <object id="971" x="112.503" y="697.054">
+   <ellipse/>
+  </object>
+  <object id="972" x="240.084" y="597.309">
+   <ellipse/>
+  </object>
+  <object id="973" x="527.72" y="729.529">
+   <ellipse/>
+  </object>
+  <object id="991" x="1263.05" y="489.446">
+   <ellipse/>
+  </object>
+  <object id="992" x="1424.26" y="488.286">
+   <ellipse/>
+  </object>
+  <object id="1002" x="1261.89" y="397.82">
+   <ellipse/>
+  </object>
+  <object id="1005" x="1421.94" y="397.82">
+   <ellipse/>
+  </object>
+  <object id="1006" x="462.77" y="2320.81">
+   <ellipse/>
+  </object>
+  <object id="1007" x="1166.78" y="2294.13">
+   <ellipse/>
+  </object>
+  <object id="1012" x="1645.79" y="2158.43">
+   <ellipse/>
+  </object>
+  <object id="1013" x="1710.74" y="2286.01">
+   <ellipse/>
+  </object>
+  <object id="1014" x="1551.84" y="2063.33">
+   <ellipse/>
+  </object>
+  <object id="1015" x="1711.9" y="1839.48">
+   <ellipse/>
+  </object>
+  <object id="1016" x="1390.63" y="1808.17">
+   <ellipse/>
+  </object>
+  <object id="1017" x="2672.23" y="15.0777">
+   <ellipse/>
+  </object>
+  <object id="1018" x="2480.86" y="143.818">
+   <ellipse/>
+  </object>
+  <object id="1019" x="2543.49" y="212.248">
+   <ellipse/>
+  </object>
+  <object id="1020" x="2286.01" y="395.5">
+   <ellipse/>
+  </object>
+  <object id="1021" x="2957.55" y="1109.95">
+   <ellipse/>
+  </object>
+  <object id="1022" x="3020.18" y="1325.68">
+   <ellipse/>
+  </object>
+  <object id="1023" x="3054.98" y="1360.47">
+   <ellipse/>
+  </object>
+  <object id="1024" x="2545.81" y="436.094">
+   <ellipse/>
+  </object>
+  <object id="1025" x="2578.29" y="467.409">
+   <ellipse/>
+  </object>
+  <object id="1026" x="2575.97" y="498.724">
+   <ellipse/>
+  </object>
+  <object id="1027" x="2577.13" y="531.199">
+   <ellipse/>
+  </object>
+  <object id="1028" x="2478.54" y="95.1055">
+   <polyline points="-4.63929,-8.11877 9.27859,40.5938 42.9135,37.1144 45.2331,10.4384 13.9179,11.5982 -6.95894,-8.11877"/>
+  </object>
+  <object id="1031" x="2562.05" y="109.023">
+   <polyline points="0,0 0,30.1554 25.5161,27.8358 24.3563,-2.31965 -1.15982,-1.15982"/>
+  </object>
+  <object id="1032" x="2633.96" y="95.1055">
+   <polyline points="0,0 -4.63929,12.7581 -5.79912,53.3519 5.79912,61.4707"/>
+  </object>
+  <object id="1040" x="2259.34" y="425.655">
+   <polyline points="0,0 1.15982,40.5938 37.1144,69.5894 33.6349,127.581 40.5938,128.74 47.5528,106.704 81.1877,109.023 80.0278,125.261 96.2654,125.261 99.7448,185.572 193.691,187.891 187.891,136.859 163.535,124.101 98.585,127.581 89.3064,67.2698 77.7082,64.9501 78.868,89.3064 44.0733,89.3064 32.4751,62.6305"/>
+  </object>
+  <object id="1043" x="2591.05" y="191.371">
+   <polyline points="0,0 -61.4707,1.15982 -93.9457,30.1554 -126.421,31.3152 -157.736,64.9501 -191.371,63.7903 -220.367,98.585 -222.686,128.74 -254.001,161.215 -328.23,235.444"/>
+  </object>
+  <object id="1045" x="2454.19" y="615.866">
+   <polyline points="0,0 3.47947,100.905 64.9501,160.056 67.2698,187.891 33.6349,220.367 35.9545,240.084 141.498,238.924 165.855,267.919 241.243,265.6 256.321,201.809 292.276,197.17 292.276,221.526 250.522,234.284"/>
+  </object>
+  <object id="1046" x="2621.2" y="884.945">
+   <polyline points="0,0 -33.6349,76.5484"/>
+  </object>
+  <object id="1049" x="2607.28" y="922.06">
+   <polyline points="0,0 38.2742,-1.15982 44.0733,-37.1144"/>
+  </object>
+  <object id="1050" x="2690.79" y="884.945">
+   <polyline points="0,0 11.5982,47.5528 37.1144,64.9501"/>
+  </object>
+  <object id="1051" x="2789.38" y="815.356">
+   <polyline points="0,0 34.7947,5.79912 63.1116,37.2346 85.827,63.7903 158.896,66.11 177.453,93.9457 177.453,153.097 158.896,169.334 91.6261,169.334 67.2698,208.768"/>
+  </object>
+  <object id="1052" x="3111.81" y="915.101">
+   <polyline points="0,0 -1.15982,-31.3152 23.1965,-40.5938 47.5528,-30.1554 47.5528,-1.15982 71.9091,-1.15982 71.9091,-53.3519 -32.4751,-54.5117 -30.1554,-1.15982 1.15982,1.15982"/>
+  </object>
+  <object id="1053" x="2921.6" y="996.289">
+   <polyline points="0,0 2.31965,44.0733 31.3152,46.3929 31.3152,17.3974 53.3519,2.31965 77.7082,16.2375 78.868,44.0733 106.704,45.2331 103.224,-3.47947 1.15982,-2.31965"/>
+  </object>
+  <object id="1055" x="2990.03" y="1345.4">
+   <polyline points="0,0 28.9956,16.2375 41.7537,46.3929 120.622,48.7126 144.978,81.1877 209.928,80.0278"/>
+  </object>
+  <object id="1056" x="2512.5" y="2320.36">
+   <ellipse/>
+  </object>
+  <object id="1058" x="2351.47" y="2356.96">
+   <ellipse/>
+  </object>
+  <object id="1060" x="944.248" y="1966.57">
+   <ellipse/>
+  </object>
+  <object id="1061" x="2789.44" y="817.372">
+   <polyline points="0,-1.21996 1.82994,15.2495 45.7484,20.7393 51.2383,40.8686 73.8075,51.2383 82.3472,72.5875 139.075,76.2474 160.425,64.6578"/>
+  </object>
+  <object id="1062" x="46.9552" y="2228.91">
+   <ellipse/>
+  </object>
+  <object id="1064" x="1840.06" y="114.453">
+   <ellipse/>
+  </object>
+  <object id="1066" x="1870.87" y="111.519">
+   <ellipse/>
+  </object>
+  <object id="1067" x="1904.62" y="111.519">
+   <ellipse/>
+  </object>
+  <object id="1068" x="2061.63" y="17.6082">
+   <ellipse/>
+  </object>
+  <object id="1069" x="2060.16" y="77.7696">
+   <ellipse/>
+  </object>
+  <object id="1070" x="1774.03" y="180.484">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>
