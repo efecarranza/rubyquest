@@ -9,8 +9,9 @@
   post '/answers.json' => 'answers#get_answer'
 
   resources :articles
-  resources :posts
-  resources :sessions
-  resources :comments
 
+  resources :sessions
+  resources :posts do
+    resources :comments
+  end
 end
