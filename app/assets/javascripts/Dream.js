@@ -117,16 +117,16 @@ RubyQuest.Dream.prototype = {
 	setUpText: function() {
 
 		if (!this.displayedText) {
-			this.time.events.add(1500, this.txtBox.destroy, this.txtBox);
-			this.time.events.add(1500, this.lblText.destroy, this.lblText);
+			this.time.events.add(100, this.txtBox.destroy, this.txtBox);
+			this.time.events.add(100, this.lblText.destroy, this.lblText);
 
-			this.time.events.add(2500, this.txtBox2.destroy, this.txtBox2);
-			this.time.events.add(2500, this.lblText2.destroy, this.lblText2);
+			this.time.events.add(100, this.txtBox2.destroy, this.txtBox2);
+			this.time.events.add(100, this.lblText2.destroy, this.lblText2);
 
-			this.time.events.add(3500, this.txtBox3.destroy, this.txtBox3);
-			this.time.events.add(3500, this.lblText3.destroy, this.lblText3);
+			this.time.events.add(100, this.txtBox3.destroy, this.txtBox3);
+			this.time.events.add(100, this.lblText3.destroy, this.lblText3);
 
-			this.time.events.add(3600, this.unlockArrows, this);
+			this.time.events.add(100, this.unlockArrows, this);
 
 			displayedText = true;
 			// this.setUpText.destroy();

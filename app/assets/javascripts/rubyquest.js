@@ -196,6 +196,10 @@ RubyQuest.rubyquest.prototype = {
 		console.log('pause');
 	},
 
+	render: function() {
+
+	},
+
 };
 
 
