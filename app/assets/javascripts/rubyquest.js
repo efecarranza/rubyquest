@@ -29,8 +29,8 @@ RubyQuest.rubyquest.prototype = {
 		mainmap = this.add.sprite(0, 0, 'map');
 		mainmap2 = this.add.sprite(0, 0, 'map2');
 		mainmapjson = this.add.tilemap('rq4map');
-		blockedLayer = mainmapjson.createLayer('layer01');
-		// mainmapjson.setCollisionByExclusion([0], true, "layer01");
+		blockedLayer = mainmapjson.objects['layer01'];
+		// mainmapjson.setCollisionByExclusion([0], true, blockedLayer);
 
 		monster = this.add.sprite(330, 630, 'monster');
 		monster.hp = 100;
@@ -58,7 +58,7 @@ RubyQuest.rubyquest.prototype = {
 		hero.animations.add('walkdown', [18,19,20,21,22,23,24,25,26]);
 		hero.animations.add('walkright', [27,28,29,30,31,32,33,34,35]);
 
-		this.physics.arcade.enable([hero, monster, ed, jo, snakemonster, mainmapjson]);
+		this.physics.arcade.enable([hero, monster, ed, jo, snakemonster, mainmap2]);
 
 		menuKey = this.input.keyboard.addKey(Phaser.Keyboard.M);
 		menuKey.onDown.add(this.menu, this);
@@ -105,6 +105,7 @@ RubyQuest.rubyquest.prototype = {
 		this.physics.arcade.collide(hero, snakemonster, this.startFight, null, this);
 		this.physics.arcade.collide(hero, ed, null, null, this);
 		this.physics.arcade.collide(hero, jo, null, null, this);
+		this.physics.arcade.collide(hero, mainmap2, null, null, this);
 
 		if (progress.act1.metEd && !progress.gems.gemOne) {
 			$('#teachings').css("background-image", "url(/assets/lesson1.png");
@@ -157,7 +158,6 @@ RubyQuest.rubyquest.prototype = {
 	},
 
 	gameInput: function() {
-		$('#input').toggle();
 	},
 
 	// represents whether the hero is talking
