@@ -43,8 +43,14 @@ RubyQuest.Fight.prototype = {
 		runtxt = this.add.text(365, 423, 'Run', txtStyle);
 
 		heroNamelbl = this.add.text(65, 373, hero.stats.name, txtStyle);
+		heroNamelbl.stroke = '#000000';
+    heroNamelbl.strokeThickness = 4;
 		heroHp = this.add.text(65, 403, "HP: " + hero.stats.hp + " /", txtStyle);
+		heroHp.stroke = '#000000';
+    heroHp.strokeThickness = 4;
 		heroMaxHp = this.add.text(155, 403, hero.stats.maxHp, txtStyle);
+		heroMaxHp.stroke = '#000000';
+    heroMaxHp.strokeThickness = 4;
 
 		this.black_bar = this.add.sprite(20, 40, 'black_bar');
 		this.physics.arcade.enableBody(this.black_bar);
@@ -97,10 +103,14 @@ RubyQuest.Fight.prototype = {
 		  fighterOne.animations.play('attack', 10, false);
 		  if (this.rnd > 0.2) {
 		  	var dmg = this.add.text(fighterTwo.position.x, fighterTwo.position.y, hero.stats.str, txtStyle);
+		  	dmg.stroke = '#000000';
+    		dmg.strokeThickness = 4;
 		  	this.time.events.add(500, dmg.destroy, dmg);
 				snakemonster.hp -= hero.stats.str;
 			} else {
 				var dmg = this.add.text(fighterTwo.position.x, fighterTwo.position.y, 'miss', txtStyle);
+				dmg.stroke = '#000000';
+    		dmg.strokeThickness = 4;
 				this.time.events.add(500, dmg.destroy, dmg);
 			}
 			if (snakemonster.hp <= 0) {
@@ -115,10 +125,14 @@ RubyQuest.Fight.prototype = {
 			if (this.rnd > 0.25) {
 				fighterTwo.animations.play('attack', 10, false);
 				var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, snakemonster.str, txtStyle);
+				dmg.stroke = '#000000';
+    		dmg.strokeThickness = 4;
 				this.time.events.add(500, dmg.destroy, dmg);
 				hero.stats.hp -= snakemonster.str;
 			} else {
 				var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, snakemonster.str, txtStyle);
+				dmg.stroke = '#000000';
+    		dmg.strokeThickness = 4;
 				this.time.events.add(500, dmg.destroy, dmg);
 				fighterTwo.animations.play('attack', 10, false);
 			}

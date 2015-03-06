@@ -28,7 +28,7 @@ RubyQuest.Preloader.prototype = {
 		this.load.image('rubyshard', 'assets/dreamparticle.png');
 		this.load.image('cat', 'assets/cat.png');
 		this.load.spritesheet('snakemonster', 'assets/snakemonster.png', 94, 78);
-		this.load.tilemap('rq4map', 'assets/rqmap.json', null, Phaser.Tilemap.TILED_JSON);
+		this.load.tilemap('rq4map', 'assets/rq4.json', null, Phaser.Tilemap.TILED_JSON);
 
 		},
 

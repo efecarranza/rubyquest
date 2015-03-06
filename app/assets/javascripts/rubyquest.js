@@ -29,8 +29,8 @@ RubyQuest.rubyquest.prototype = {
 		mainmap = this.add.sprite(0, 0, 'map');
 		mainmap2 = this.add.sprite(0, 0, 'map2');
 		mainmapjson = this.add.tilemap('rq4map');
-		blockedLayer = mainmapjson.createLayer("Real Impassable Layer");
-		// mainmapjson.setCollisionByExclusion([0], false, "Real Impassable Layer");
+		blockedLayer = mainmapjson.createLayer('layer01');
+		// mainmapjson.setCollisionByExclusion([0], true, "layer01");
 
 		monster = this.add.sprite(330, 630, 'monster');
 		monster.hp = 100;
@@ -96,6 +96,11 @@ RubyQuest.rubyquest.prototype = {
 	},
 
 	update: function() {
+
+		if (snakemonster.hp <= 0) {
+			snakemonster.destroy();
+		}
+
 		this.physics.arcade.collide(hero, monster, null, null, this);
 		this.physics.arcade.collide(hero, snakemonster, this.startFight, null, this);
 		this.physics.arcade.collide(hero, ed, null, null, this);
