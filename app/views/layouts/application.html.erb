@@ -15,19 +15,22 @@
 <div class="nav">
   <% if current_user %>
   Signed in as <%= current_user.username %>
-  <%= link_to "Logout", '/logout', class: "btn" %>
+  <%= link_to "Logout", '/logout', class: "ruby-btn" %>
 <% else %>
-  <%= link_to 'Login', '/login', class: "btn" %>
-  <%= link_to 'Signup', '/signup', class: "btn" %>
+  <%= link_to 'Login', '/login', class: "ruby-btn" %>
+  <%= link_to 'Signup', '/signup', class: "ruby-btn" %>
 <% end %>
-  <%= link_to 'Forum', '/posts', class: "btn" %>
+  <%= link_to 'Forum', '/posts', class: "ruby-btn" %>
+
+<%= notice %>
+<%= alert %>
+
 </div>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 <div class="text-center">
-  <%= link_to image_tag("rq-logo-sharp.png", class: "rq-logo-pixeled noselect", width: '350'), '/' %>
+  <%= link_to image_tag("rq-logo-sharp.png", class: "rq-logo-pixeled"), '/' %>
 </div>
+
 <%= yield %>
 
 </body>

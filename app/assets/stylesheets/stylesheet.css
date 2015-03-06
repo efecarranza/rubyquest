@@ -1,14 +1,16 @@
-p {
-	font-family: Arial;
-	font-size: 20px;
-	font-weight: black;
-	text-align: center;
-}
 
 canvas {
 	display:block;
 	margin: auto;
 }
+
+
+/*p {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: black;
+	text-align: center;
+}*/
 
 #dialogue {
 	padding-top: 20px;
@@ -66,122 +68,3 @@ canvas {
 	font-family: Arial;
 	background-color: #000;
 }
-
-/* Yar, here be major CSS changes!*/
-
-
-
-body {
-   font-family: 'Monda', sans-serif;
-   font-weight: 700;
-   font-style: normal;
-   font-size: 14px;
-   background-color: #d1d1d1; /* 2e2e2e for very dark instead */
-   background-image: url("/assets/shards-mg.png");
-   color:#000000;
- }
-
-h1{
-	text-align: center;
-	background-color: #D32F2F;
-	color: #fff;
-	padding: 5px;
-	border-style: groove;
-	border-width: 3px;
-	border-color: #330000;
-	border-radius: 5px;
-	font-size: 30px;
-}
-
-form{
-	padding: 5px;
-	background-color: #D32F2F;
-	color: #000;
-}
-
-h2{
-	border-style: groove;
-	border-width: 3px;
-	border-color: #330000;
-	border-radius: 5px;
-	font-size: 30px;
-}
-
-form{
-	border-style: groove;
-	border-width: 3px;
-	border-color: #330000;
-	border-radius: 5px;
-	font-size: 12px;
-	vertical-align: text-bottom;
-}
-
-/* regular link */
-a:link {
-	padding: 5px;
-	border-style: groove;
-	border-width: 3px;
-	border-color: #202020;
-	border-radius: 5px;
-	font-size: 12px;
-	color: #FFFFFF;
-	background-color: #D32F2F;
-    text-decoration: none;
-    text-decoration: none;
-}
-
-/* mouse over */
-a:hover {
-    padding: 5px;
-	border-style: groove;
-	border-width: 3px;
-	border-color: #202020;
-    border-radius: 5px;
-	font-size: 12px;
-	color: #202020;
-	background-color: #FFFFFF;
-    text-decoration: none;
-}
-
-/* pressed */
-a:active {
-    padding: 5px;
-	border-style: groove;
-	border-width: 5px;
-	border-color: #202020;
-    border-radius: 5px;
-	font-size: 12px;
-    color: #FF0000;
-	background-color: #202020;
-
-
-
-}
-
-.noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-a {
-    outline: none, !important;
-}
-.btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
-}
-
-.articles {
-  font-size: 12px;
-  padding: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-
-
-
-
