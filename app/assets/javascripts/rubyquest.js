@@ -1,4 +1,4 @@
-RubyQuest.rubyquest = function(game) {
+	RubyQuest.rubyquest = function(game) {
 	this.hero;
 	this.ed;
 	this.jo;
@@ -29,8 +29,9 @@ RubyQuest.rubyquest.prototype = {
 		mainmap = this.add.sprite(0, 0, 'map');
 		mainmap2 = this.add.sprite(0, 0, 'map2');
 		mainmapjson = this.add.tilemap('rq4map');
-		blockedLayer = mainmapjson.objects['layer01'];
-		// mainmapjson.setCollisionByExclusion([0], true, blockedLayer);
+		mainmapjson.addTilesetImage('hole', 'hole');
+		blockedLayer = mainmapjson.createLayer('blocking');
+		mainmapjson.setCollisionByExclusion([0], true, 'blocking');
 
 		monster = this.add.sprite(330, 630, 'monster');
 		monster.hp = 100;
@@ -41,7 +42,7 @@ RubyQuest.rubyquest.prototype = {
 		snakemonster.hp = 100;
 		snakemonster.str = 15;
 
-		jo = this.add.sprite(450, 700, 'cat');
+		jo = this.add.sprite(1250, 2123, 'cat');
 
 		ed = this.add.sprite(1300, 2323, 'ed'); // make 166, 2020 after debug or 500 780 for debug
 		ed.lines = ["Hello, I can see you are beginning a journey...", "...a journey that will take you to many dark places.",
@@ -50,6 +51,11 @@ RubyQuest.rubyquest.prototype = {
 			"In order to unlock the power of the gem you are going to need to speak to it first...", "Let me explain you the basics:" ]
 
 		hero.loadTexture('hero');
+		this.world.bringToTop(mainmap);
+		this.world.bringToTop(monster);
+		this.world.bringToTop(snakemonster);
+		this.world.bringToTop(jo);
+		this.world.bringToTop(ed);
 		this.world.bringToTop(hero);
 		this.world.bringToTop(mainmap2);
 
@@ -58,7 +64,7 @@ RubyQuest.rubyquest.prototype = {
 		hero.animations.add('walkdown', [18,19,20,21,22,23,24,25,26]);
 		hero.animations.add('walkright', [27,28,29,30,31,32,33,34,35]);
 
-		this.physics.arcade.enable([hero, monster, ed, jo, snakemonster, mainmap2]);
+		this.physics.arcade.enable([hero, monster, ed, jo, snakemonster, mainmapjson]);
 
 		menuKey = this.input.keyboard.addKey(Phaser.Keyboard.M);
 		menuKey.onDown.add(this.menu, this);
@@ -75,6 +81,10 @@ RubyQuest.rubyquest.prototype = {
 		jo.body.immovable = true;
 		snakemonster.body.immovable = true;
 		hero.body.collideWorldBounds = true;
+
+		hero.body.setSize(33, 51, 0, 0);
+		ed.body.setSize(35, 50, 18, 0);
+		jo.body.setSize(25, 30, 10, 0);
 
 		$('#input').submit( function(e) {
 			e.preventDefault();
@@ -105,12 +115,12 @@ RubyQuest.rubyquest.prototype = {
 		this.physics.arcade.collide(hero, snakemonster, this.startFight, null, this);
 		this.physics.arcade.collide(hero, ed, null, null, this);
 		this.physics.arcade.collide(hero, jo, null, null, this);
-		this.physics.arcade.collide(hero, mainmap2, null, null, this);
+		this.physics.arcade.collide(hero, blockedLayer, null, null, this);
 
 		if (progress.act1.metEd && !progress.gems.gemOne) {
 			$('#teachings').css("background-image", "url(/assets/lesson1.png");
-			$('#teachings').show().css({'position':'absolute','top':$('canvas').offset().top+'px','left':$('canvas').offset().left+'px'});
-			$('#input').show().css({'position':'absolute','top':$('canvas').offset().top+ 400 + 'px','left':$('canvas').offset().left+ 230 +'px'});;
+			$('#teachings').show().css({'position':'absolute','top':$('canvas').offset().top +'px','left':$('canvas').offset().left+'px'});
+			$('#input').show().css({'position':'absolute','top':$('canvas').offset().top + 400 + 'px','left':$('canvas').offset().left+ 230 +'px'});;
 
 		} else {
 			$('#teachings').hide();

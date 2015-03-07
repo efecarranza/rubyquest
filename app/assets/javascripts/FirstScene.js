@@ -1,5 +1,13 @@
 RubyQuest.FirstScene = function(game) {
-  this.unlockArrows;
+  this.bg;
+  this.bg2;
+  this.hero;
+  this.tweeny;
+  this.tweenlogo;
+  this.rqlogo;
+  this.tweenbg;
+  this.tweenbg2;
+  this.tweenhero;
 };
 
 RubyQuest.FirstScene.prototype = {
@@ -9,25 +17,18 @@ RubyQuest.FirstScene.prototype = {
   },
 
   create: function() {
-    this.world.setBounds(0, 0, 640, 480);
+    this.world.setBounds(0, 0, 3200, 2400);
     this.physics.startSystem(Phaser.Physics.ARCADE);
-
-    // hero = this.add.sprite(320, 300, 'hero');
-        // hero.stats = {
-        // name: "Wynn",
-        // maxHp: 200,
-        // hp: 200,
-        // str: 15,
-        // def: 8,
-        // level: 1,
-        // exp: 0,
-        // };
-
-    hero.anchor.setTo(0.5, 0.5);
-    hero.animations.add('walkup', [0,1,2,3,4,5,6,7,8]);
-    hero.animations.add('walkleft', [9,10,11,12,13,14,15,16,17]);
-    hero.animations.add('walkdown', [18,19,20,21,22,23,24,25,26]);
-    hero.animations.add('walkright', [27,28,29,30,31,32,33,34,35]);
+    hero = this.add.sprite(682, 900, 'hero');
+    hero.alpha = 0;
+    bg = this.add.sprite(0, 0, 'map');
+    bg2 = this.add.sprite(0, 0, 'map2');
+    bg.alpha = 0;
+    bg2.alpha = 0;
+    bg.height = 1200;
+    bg.width = 1600;
+    bg2.height = 1200;
+    bg2.width = 1600;
 
     this.physics.arcade.enable([hero]);
 
@@ -36,32 +37,73 @@ RubyQuest.FirstScene.prototype = {
     interactKey.onDown.add(this.interact, this);
 
     hero.body.collideWorldBounds = true;
+    this.camera.follow(hero, Phaser.Camera.FOLLOW_TOPDOWN);
 
-    unlockArrows = true;
+    tweeny = this.add.tween(hero);
+
+    tweenbg = this.add.tween(bg);
+    tweenbg2 = this.add.tween(bg2);
+
+    tweenbg.to( {alpha: 1}, 16000);
+    tweenbg2.to( {alpha: 1}, 16000);
+
+    tweeny.to( {y: 125 }, 24000);
+
+    this.runText();
+
 
   },
 
   update: function() {
-    hero.body.velocity.x = 0;
-    hero.body.velocity.y = 0;
-    if (unlockArrows) {
-      if (cursors.up.isDown) {
-          hero.body.velocity.y = -80;
-          hero.animations.play('walkup', 10, true);
-        } else if (cursors.down.isDown) {
-          hero.body.velocity.y = 80;
-          hero.animations.play('walkdown', 10, true);
-        } else if (cursors.left.isDown) {
-          hero.body.velocity.x = -80;
-          hero.animations.play('walkleft', 10, true);
-        } else if (cursors.right.isDown) {
-          hero.body.velocity.x = 80;
-          hero.animations.play('walkright', 10, true);
-        } else {
-          hero.animations.stop(null, true);
-        }
-    }
+    if (hero.position.y <= 140) {
+      rqlogo = this.add.sprite(345,0, 'black');
+      console.log('before');
+      this.time.events.add(1000, this.startGame(), this);
+      console.log('after');
+    };
 
+  },
+
+  runText: function() {
+    this.currentLine = 0;
+    this.offset = 50;
+    this.lines = [ "In a world ravaged by war",
+                   "the evil Pythonista has taken control.",
+                   "His magical snake has downed all those",
+                   "who have opposed him.",
+                   "The only hope for the citizens of Modool",
+                   "might lie in the power of a long lost language."];
+
+    this.style = { font: "30px Arial", fill: "#fff", align: "center" };
+    while (this.currentLine < 6) {
+      this.text = this.add.text(370, 650 + this.offset, this.lines[this.currentLine], this.style);
+      this.text.alpha = 0;
+      this.tween = this.add.tween(this.text);
+      this.tween.to( {alpha: 1}, 4000);
+      this.tween.start();
+      this.offset += 50;
+      this.currentLine++;
+    };
+    this.runLogo();
+  },
+
+  runLogo: function() {
+    tweenbg.start();
+    tweenbg2.start();
+
+    tweeny.start();
+    this.world.bringToTop(bg);
+    this.world.bringToTop(bg2);
+
+  },
+
+  startGame: function() {
+    tweenhero = this.add.tween(hero);
+    tweenhero.to( { alpha: 1}, 2000);
+    tweenhero.start();
+    if (hero.alpha === 1) {
+      this.state.start('Dream');
+    }
   },
 
   interact: function() {
