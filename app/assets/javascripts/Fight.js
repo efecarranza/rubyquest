@@ -6,9 +6,11 @@ RubyQuest.Fight = function(game) {
 	this.menuLabel;
 	this.attackButton;
 	this.runButton;
+	this.fireButton;
 	this.txtStyle;
 	this.attacktxt;
 	this.runtxt;
+	this.firetxt;
 	this.heroNamelbl;
 	this.heroMaxHp;
 	this.heroHp;
@@ -23,6 +25,7 @@ RubyQuest.Fight.prototype = {
 	},
 
 	create: function() {
+
 		// Create Background and Battle Menu
 		bg = this.add.image(0, 0, 'battlebg');
 		menuLabel = this.add.image(20, 360, 'label');
@@ -30,17 +33,24 @@ RubyQuest.Fight.prototype = {
 		menuLabel.height = 100;
 
 		// Add Buttons and Labels
-		attackButton = this.add.button(340, 370, 'label', this.attack, this, 2, 1, 0);
+		attackButton = this.add.button(300, 370, 'label', this.attack, this, 2, 1, 0);
 		attackButton.width = 120;
 		attackButton.height = 30;
 
-		runButton = this.add.button(340, 420, 'label', this.run, this, 2,1, 0);
+		runButton = this.add.button(300, 420, 'label', this.run, this, 2, 1, 0);
 		runButton.width = 120;
 		runButton.height = 30;
 
 		txtStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-		attacktxt = this.add.text(365, 373, 'Attack', txtStyle);
-		runtxt = this.add.text(365, 423, 'Run', txtStyle);
+		attacktxt = this.add.text(325, 373, 'Attack', txtStyle);
+		runtxt = this.add.text(325, 423, 'Run', txtStyle);
+
+		if (progress.gems.gemOne) {
+			fireButton = this.add.button(440, 370, 'label', this.fireball, this, 2, 1, 0);
+			fireButton.width = 120;
+			fireButton.height = 30;
+			firetxt = this.add.text(465, 373, 'Fireball', txtStyle);
+		};
 
 		heroNamelbl = this.add.text(65, 373, hero.stats.name, txtStyle);
 		heroNamelbl.stroke = '#000000';
@@ -81,6 +91,8 @@ RubyQuest.Fight.prototype = {
 		fighterOne.width = 208;
 		fighterTwo.height = 128;
 		fighterTwo.width = 96;
+
+		// this.firelion2 = this.add.sprite(200, 200, 'fireball');
 
 		// Add animations
 		fighterOne.animations.add('attack', [0,1,2,3,4,5,0]);
@@ -140,6 +152,37 @@ RubyQuest.Fight.prototype = {
 			this.blood_bar.scale.setTo((hero.stats.hp / hero.stats.maxHp), 1);
 			heroHp.setText("HP: " + hero.stats.hp + " /");
 		}
+
+	},
+
+	fireball: function() {
+		this.rnd = Math.random();
+		this.firelion = this.add.sprite(fighterTwo.position.x - 80, fighterTwo.position.y - 80, 'fireball');
+		if (this.rnd > 0.2) {
+			this.firelion.animations.add('attack', [1,2,3,4,6,7,8,9,11,12,13,14,16,17,18,19,0]);
+			this.firelion.animations.play('attack', 10, false);
+			// this.firelion.destroy;
+			var dmg = this.add.text(fighterTwo.position.x, fighterTwo.position.y, hero.stats.mgk, txtStyle);
+			dmg.stroke = '#000000';
+  		dmg.strokeThickness = 4;
+			this.time.events.add(500, dmg.destroy, dmg);
+			snakemonster.hp -= hero.stats.mgk;
+			counter++;
+			this.green_bar.scale.setTo((snakemonster.hp / snakemonster.maxHp), 1);
+		} else {
+				var dmg = this.add.text(fighterTwo.position.x, fighterTwo.position.y, 'miss', txtStyle);
+				dmg.stroke = '#000000';
+    		dmg.strokeThickness = 4;
+				this.time.events.add(500, dmg.destroy, dmg);
+		};
+
+		if (snakemonster.hp <= 0) {
+				snakemonster.kill();
+				hero.hp = hero.maxHp;
+				hero.position.x = trackPosition;
+				this.state.start('rubyquest', false, false);
+
+		};
 
 	},
 

@@ -32,6 +32,7 @@ RubyQuest.Preloader.prototype = {
 		this.load.image('black', 'assets/black.png');
 		this.load.tilemap('rq4map', 'assets/rq4-blocking.json', null, Phaser.Tilemap.TILED_JSON);
 		this.load.image('hole', 'assets/hole.png');
+		this.load.spritesheet('fireball', 'assets/firelion2.png', 128, 128);
 
 		},
 
@@ -43,4 +44,5 @@ RubyQuest.Preloader.prototype = {
 			this.ready = true;
 			this.state.start('StartMenu');
 		}
+
 	};

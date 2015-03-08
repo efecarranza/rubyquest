@@ -7,6 +7,7 @@ RubyQuest.Dream = function(game) {
 	this.cursors;
 	this.unlockArrows;
 	this.displayedText;
+	this.rqlogo;
 };
 
 RubyQuest.Dream.prototype = {
@@ -18,17 +19,6 @@ RubyQuest.Dream.prototype = {
 		ruby = this.add.sprite(320, 100, 'ruby');
 		ruby.anchor.setTo(0.5, 0.5);
 
-		hero = this.add.sprite(320, 300, 'herobw');
-		hero.stats = {
-		name: "Wynn",
-		maxHp: 200,
-		hp: 200,
-		str: 15,
-		def: 8,
-		level: 1,
-		exp: 0,
-		};
-
 		progress = {
 			gems: { gemOne: false, gemTwo: false },
 			act1: {
@@ -37,27 +27,9 @@ RubyQuest.Dream.prototype = {
 			}
 		}
 
-		lessons = {
-			one: "Ruby variables are a way to store data \n"
-
-					}
-
-
-		hero.anchor.setTo(0.5, 0.5);
-		hero.animations.add('walkup', [0,1,2,3,4,5,6,7,8]);
-		hero.animations.add('walkleft', [9,10,11,12,13,14,15,16,17]);
-		hero.animations.add('walkdown', [18,19,20,21,22,23,24,25,26]);
-		hero.animations.add('walkright', [27,28,29,30,31,32,33,34,35]);
-
-		this.physics.arcade.enable([hero, ruby]);
-
 		cursors = this.input.keyboard.createCursorKeys();
 		interactKey = this.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 		interactKey.onDown.add(this.interact, this);
-
-		ruby.body.immovable = true;
-
-		hero.body.collideWorldBounds = true;
 
 		this.txt = ["  ...huh?...", " What's going on?", " Is this a dream?"];
 
@@ -66,19 +38,53 @@ RubyQuest.Dream.prototype = {
 		this.lblText.width = 150;
 		this.txtStyle = { font: "25px Arial", fill: "#fff", align: "center" }
 		this.txtBox = this.add.text(100, 100, this.txt[0], this.txtStyle);
+		this.txtBox.alpha = 0.5;
+		this.lblText.alpha = 0.5;
 
 		this.lblText2 = this.add.image(400, 150, 'label');
 		this.lblText2.height = 50;
 		this.lblText2.width = 200;
 		this.txtBox2 = this.add.text(400, 150, this.txt[1], this.txtStyle);
+		this.txtBox2.alpha = 0.5;
+		this.lblText2.alpha = 0.5;
 
 		this.lblText3 = this.add.image(300, 400, 'label');
 		this.lblText3.height = 50;
 		this.lblText3.width = 200;
 		this.txtBox3 = this.add.text(300, 400, this.txt[2], this.txtStyle);
+		this.txtBox3.alpha = 0.5;
+		this.lblText3.alpha = 0.5;
 
 		unlockArrows = false;
 		displayedText = false;
+
+		hero = this.add.sprite(320, 300, 'herobw');
+		hero.stats = {
+		name: "Wynn",
+		maxHp: 200,
+		hp: 200,
+		str: 15,
+		mgk: 60,
+		def: 8,
+		level: 1,
+		exp: 0,
+		};
+
+		hero.anchor.setTo(0.5, 0.5);
+		hero.animations.add('walkup', [0,1,2,3,4,5,6,7,8]);
+		hero.animations.add('walkleft', [9,10,11,12,13,14,15,16,17]);
+		hero.animations.add('walkdown', [18,19,20,21,22,23,24,25,26]);
+		hero.animations.add('walkright', [27,28,29,30,31,32,33,34,35]);
+
+		this.physics.arcade.enable([hero, ruby]);
+		ruby.body.immovable = true;
+		hero.body.collideWorldBounds = true;
+
+		hero.alpha = 0.75;
+		ruby.alpha = 0.75;
+
+		rqlogo = this.add.sprite(0,0, 'black');
+		this.time.events.add(2500, rqlogo.destroy, rqlogo);
 	},
 
 	update: function() {

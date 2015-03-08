@@ -56,10 +56,7 @@ RubyQuest.FirstScene.prototype = {
 
   update: function() {
     if (hero.position.y <= 140) {
-      rqlogo = this.add.sprite(345,0, 'black');
-      console.log('before');
       this.time.events.add(1000, this.startGame(), this);
-      console.log('after');
     };
 
   },
@@ -98,15 +95,11 @@ RubyQuest.FirstScene.prototype = {
   },
 
   startGame: function() {
-    tweenhero = this.add.tween(hero);
-    tweenhero.to( { alpha: 1}, 2000);
-    tweenhero.start();
-    if (hero.alpha === 1) {
       this.state.start('Dream');
-    }
   },
 
   interact: function() {
+
   },
 
 };

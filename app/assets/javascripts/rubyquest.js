@@ -81,6 +81,7 @@ RubyQuest.rubyquest.prototype = {
 		jo.body.immovable = true;
 		snakemonster.body.immovable = true;
 		hero.body.collideWorldBounds = true;
+		hero.alpha = 1;
 
 		hero.body.setSize(33, 51, 0, 0);
 		ed.body.setSize(35, 50, 18, 0);
@@ -204,10 +205,6 @@ RubyQuest.rubyquest.prototype = {
 		// pauses the game
 	pause: function() {
 		console.log('pause');
-	},
-
-	render: function() {
-
 	},
 
 };
