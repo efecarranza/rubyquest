@@ -22,6 +22,7 @@ RubyQuest.Dream.prototype = {
 		progress = {
 			gems: { gemOne: false, gemTwo: false },
 			act1: {
+				metFather: false,
 				metEd: false,
 				metWalter: false
 			}

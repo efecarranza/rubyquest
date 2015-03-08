@@ -44,7 +44,7 @@ RubyQuest.rubyquest.prototype = {
 
 		jo = this.add.sprite(1250, 2123, 'cat');
 
-		ed = this.add.sprite(1300, 2323, 'ed'); // make 166, 2020 after debug or 500 780 for debug
+		ed = this.add.sprite(162, 2200, 'ed'); // make 166, 2020 after debug or 500 780 for debug
 		ed.lines = ["Hello, I can see you are beginning a journey...", "...a journey that will take you to many dark places.",
 			"You will need a great power to succeed.", "A power that only could be channeled through....Ruby...",
 			"This Ruby was long ago shattered into many pieces.", "Only fragments remain, which in common lore are referred to as 'gems.'",

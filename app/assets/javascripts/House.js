@@ -3,6 +3,8 @@ RubyQuest.House = function(game) {
   this.housemap2;
   this.housejson;
   this.blockLayer;
+  this.father;
+  this.interactKey;
 };
 
 RubyQuest.House.prototype = {
@@ -23,6 +25,49 @@ RubyQuest.House.prototype = {
 
     hero.loadTexture('hero');
     this.world.bringToTop(housemap);
+
+    father = this.add.sprite(554, 168, 'father');
+
+    father.lines = ["Good morning son",
+                    "I noticed you had a bad dream last night,",
+                    "Please tell me more about it.",
+                    "So you were trapped in this world and saw a Ruby that shattered into pieces?",
+                    "A long time ago, there was magical Ruby on Modool that kept the balance between good and evil,",
+                    "But one day, the evil Pythonista found a way to destroy this Ruby,",
+                    "Without it to balance the natural forces of good and evil, the Pythonista took over Modool,",
+                    "The Ruby shards still contain power, but I don't know much more about it.",
+                    "Eddard of House Taurus is an old wizard who knows all about magic,",
+                    "He lives west of here by himself, if you want to know more, you should go meet him,",
+                    "Please take care son, this journey might be very dangerous."];
+
+    father.talk = function() {
+        // check to see if talking
+      if(!this.currently_talking){
+        // this is where the dialogue cycle goes
+        this.currently_talking = true;
+        // set dialogue line to 0 (fist line)
+        currentLine = 0;
+        // bring up the dialogue box
+        $('#dialogue').toggle().css({'position':'absolute','top':$('canvas').offset().top+30+'px','left':$('canvas').offset().left+20+'px'});
+        // on interact key down, bring up next line in dialogue array
+        $('#dialogue').text(father.lines[currentLine]);
+      } else {
+        // on spacebar, cycle to next line of dialogue
+        currentLine++;
+        if (currentLine === father.lines.length) {
+          this.currently_talking = false;
+          progress.act1.metFather = true;
+          $('#dialogue').toggle();
+        }
+        // on interact key down, bring up next line in dialogue array
+        $('#dialogue').text(father.lines[currentLine]);
+
+      }
+    };
+
+    interactKey = this.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+    interactKey.onDown.add(this.interact, this);
+
     this.world.bringToTop(hero);
     this.world.bringToTop(housemap2);
 
@@ -33,17 +78,20 @@ RubyQuest.House.prototype = {
 
     hero.body.setSize(33, 51, 0, 0);
 
-    this.physics.arcade.enable([hero, housejson]);
+    this.physics.arcade.enable([hero, housejson, father]);
 
     hero.body.collideWorldBounds = true;
     hero.alpha = 1;
+    father.body.immovable = true;
+    father.body.setSize(35, 50, 18, 0);
 
   },
 
   update: function() {
     this.physics.arcade.collide(hero, blockLayer, null, null, this);
+    this.physics.arcade.collide(hero, father, null, null, this);
 
-    if (hero.position.y > 450) {
+    if (hero.position.y > 450 && progress.act1.metFather) {
       hero.position.x = 1404;
       hero.position.y = 2302;
       this.state.start('rubyquest', false, false, this.hero);
@@ -68,6 +116,12 @@ RubyQuest.House.prototype = {
         hero.animations.stop(null, true);
       };
     };
+  },
+
+  interact: function() {
+    if(this.physics.arcade.distanceBetween(hero, father) < 100){
+      father.talk();
+    }
   },
 
   mainWorld: function() {

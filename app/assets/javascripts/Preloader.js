@@ -36,6 +36,7 @@ RubyQuest.Preloader.prototype = {
 		this.load.image('house', 'assets/indoor1.png');
 		this.load.image('housetop', 'assets/indoor1-top.png');
 		this.load.tilemap('houseblock', 'assets/indoor1-blocking.json', null, Phaser.Tilemap.TILED_JSON);
+		this.load.spritesheet('father', 'assets/father.png', 63, 62);
 
 		},
 
