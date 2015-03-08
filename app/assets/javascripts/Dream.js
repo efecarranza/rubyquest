@@ -156,9 +156,9 @@ RubyQuest.Dream.prototype = {
 	},
 
 	startGame: function() {
-		hero.position.x = 1389;
-		hero.position.y = 2323;
-		this.state.start('rubyquest', false, false, this.hero, this.progress, this.cursors);
+		hero.position.x = 150;
+    hero.position.y = 200;
+		this.state.start('House', false, false, this.hero, this.progress, this.cursors);
 	},
 
 };
