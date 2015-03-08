@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Answer.destroy_all
 Answer.create(answers: ["x=1.5"], message: 'Success')
 Answer.create(answers: ["a=[]"], message: 'Success')
 

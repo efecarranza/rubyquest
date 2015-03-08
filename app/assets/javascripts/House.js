@@ -28,7 +28,7 @@ RubyQuest.House.prototype = {
 
     father = this.add.sprite(554, 168, 'father');
 
-    father.lines = ["Good morning son",
+    father.lines = ["Good morning son.",
                     "I noticed you had a bad dream last night,",
                     "Please tell me more about it.",
                     "So you were trapped in this world and saw a Ruby that shattered into pieces?",
@@ -38,7 +38,8 @@ RubyQuest.House.prototype = {
                     "The Ruby shards still contain power, but I don't know much more about it.",
                     "Eddard of House Taurus is an old wizard who knows all about magic,",
                     "He lives west of here by himself, if you want to know more, you should go meet him,",
-                    "Please take care son, this journey might be very dangerous."];
+                    "Please take care son, this journey might be very dangerous.",
+                    "Here's a sword in case there are any monsters."];
 
     father.talk = function() {
         // check to see if talking
@@ -56,6 +57,7 @@ RubyQuest.House.prototype = {
         currentLine++;
         if (currentLine === father.lines.length) {
           this.currently_talking = false;
+              alert("Obtained 'Sword'");
           progress.act1.metFather = true;
           $('#dialogue').toggle();
         }
@@ -86,6 +88,9 @@ RubyQuest.House.prototype = {
     father.body.setSize(35, 50, 18, 0);
 
   },
+
+
+  currently_talking: false,
 
   update: function() {
     this.physics.arcade.collide(hero, blockLayer, null, null, this);

@@ -2,7 +2,7 @@
 	this.hero;
 	this.ed;
 	this.jo;
-	this.monster;
+	this.monsterEyes;
 	this.snakemonster;
 	this.cursors;
 	this.mainmap;
@@ -15,6 +15,8 @@
 	this.inputKey;
 	this.dialogue;
 	this.currentLine;
+	this.npcs;
+	this.monsters;
 };
 
 RubyQuest.rubyquest.prototype = {
@@ -33,9 +35,11 @@ RubyQuest.rubyquest.prototype = {
 		blockedLayer = mainmapjson.createLayer('blocking');
 		mainmapjson.setCollisionByExclusion([0], true, 'blocking');
 
-		monster = this.add.sprite(330, 630, 'monster');
-		monster.hp = 100;
-		monster.str = 15;
+		npcs = this.add.group();
+
+		monsterEyes = this.add.sprite(330, 630, 'monster');
+		monsterEyes.hp = 100;
+		monsterEyes.str = 15;
 
 		snakemonster = this.add.sprite(780, 2200, 'snakemonster');
 		snakemonster.maxHp = 100;
@@ -44,7 +48,7 @@ RubyQuest.rubyquest.prototype = {
 
 		jo = this.add.sprite(1250, 2123, 'cat');
 
-		ed = this.add.sprite(162, 2200, 'ed'); // make 166, 2020 after debug or 500 780 for debug
+		ed = this.add.sprite(162, 2200, 'ed');
 		ed.lines = ["Hello, I can see you are beginning a journey...", "...a journey that will take you to many dark places.",
 			"You will need a great power to succeed.", "A power that only could be channeled through....Ruby...",
 			"This Ruby was long ago shattered into many pieces.", "Only fragments remain, which in common lore are referred to as 'gems.'",
@@ -52,10 +56,11 @@ RubyQuest.rubyquest.prototype = {
 
 		hero.loadTexture('hero');
 		this.world.bringToTop(mainmap);
-		this.world.bringToTop(monster);
+		this.world.bringToTop(monsterEyes);
 		this.world.bringToTop(snakemonster);
 		this.world.bringToTop(jo);
 		this.world.bringToTop(ed);
+		this.world.bringToTop(npcs);
 		this.world.bringToTop(hero);
 		this.world.bringToTop(mainmap2);
 
@@ -64,7 +69,7 @@ RubyQuest.rubyquest.prototype = {
 		hero.animations.add('walkdown', [18,19,20,21,22,23,24,25,26]);
 		hero.animations.add('walkright', [27,28,29,30,31,32,33,34,35]);
 
-		this.physics.arcade.enable([hero, monster, ed, jo, snakemonster, mainmapjson]);
+		this.physics.arcade.enable([hero, monsterEyes, ed, jo, snakemonster, mainmapjson, npcs]);
 
 		menuKey = this.input.keyboard.addKey(Phaser.Keyboard.M);
 		menuKey.onDown.add(this.menu, this);
@@ -76,7 +81,7 @@ RubyQuest.rubyquest.prototype = {
 		inputKey.onDown.add(this.gameInput, this);
 
 		this.camera.follow(hero, Phaser.Camera.FOLLOW_TOPDOWN);
-		monster.body.immovable = true;
+		monsterEyes.body.immovable = true;
 		ed.body.immovable = true;
 		jo.body.immovable = true;
 		snakemonster.body.immovable = true;
@@ -86,6 +91,8 @@ RubyQuest.rubyquest.prototype = {
 		hero.body.setSize(33, 51, 0, 0);
 		ed.body.setSize(35, 50, 18, 0);
 		jo.body.setSize(25, 30, 10, 0);
+
+		npcs.add(jo);
 
 		$('#input').submit( function(e) {
 			e.preventDefault();
@@ -97,6 +104,9 @@ RubyQuest.rubyquest.prototype = {
 				if (data.message === 'Success') {
 					alert("Congratulations! You've acquired a Gem.");
 					progress.gems.gemOne = true;
+					hero.stats.maxHp = 400;
+					hero.stats.hp = 400;
+					hero.stats.str = 25;
 				} else {
 					alert("Oops, try again!");
 				}
@@ -108,14 +118,10 @@ RubyQuest.rubyquest.prototype = {
 
 	update: function() {
 
-		if (snakemonster.hp <= 0) {
-			snakemonster.destroy();
-		}
-
-		this.physics.arcade.collide(hero, monster, null, null, this);
+		this.physics.arcade.collide(hero, monsterEyes, this.startFight, null, this);
 		this.physics.arcade.collide(hero, snakemonster, this.startFight, null, this);
 		this.physics.arcade.collide(hero, ed, null, null, this);
-		this.physics.arcade.collide(hero, jo, null, null, this);
+		this.physics.arcade.collide(hero, npcs, null, null, this);
 		this.physics.arcade.collide(hero, blockedLayer, null, null, this);
 
 		if (progress.act1.metEd && !progress.gems.gemOne) {
@@ -150,8 +156,8 @@ RubyQuest.rubyquest.prototype = {
 
 	},
 
-	startFight: function() {
-		this.state.start('Fight', false, false, this.hero, this.monster);
+	startFight: function(enemy) {
+		this.state.start('Fight', false, false, enemy);
 	},
 
 	menu: function() {

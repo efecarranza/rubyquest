@@ -16,11 +16,12 @@ RubyQuest.Fight = function(game) {
 	this.heroHp;
 	this.counter;
 	this.trackPosition;
+	this.emitter;
 };
 
 RubyQuest.Fight.prototype = {
 
-	init: function(hero, snakemonster) {
+	init: function(enemy) {
 
 	},
 
@@ -105,6 +106,7 @@ RubyQuest.Fight.prototype = {
 
 	update: function() {
 
+
 	},
 
 	attack: function() {
@@ -119,35 +121,35 @@ RubyQuest.Fight.prototype = {
     		dmg.strokeThickness = 4;
 		  	this.time.events.add(500, dmg.destroy, dmg);
 				snakemonster.hp -= hero.stats.str;
+				if (snakemonster.hp <= 0) {
+					this.green_bar.scale.setTo((0 / snakemonster.maxHp), 1);
+					this.killMonster();
+				};
 			} else {
 				var dmg = this.add.text(fighterTwo.position.x, fighterTwo.position.y, 'miss', txtStyle);
 				dmg.stroke = '#000000';
     		dmg.strokeThickness = 4;
 				this.time.events.add(500, dmg.destroy, dmg);
 			}
-			if (snakemonster.hp <= 0) {
-				snakemonster.kill();
-				hero.hp = hero.maxHp;
-				hero.position.x = trackPosition;
-				this.state.start('rubyquest', false, false);
-			}
 			counter++;
-			this.green_bar.scale.setTo((snakemonster.hp / snakemonster.maxHp), 1);
-		} else {
-			if (this.rnd > 0.25) {
-				fighterTwo.animations.play('attack', 10, false);
-				var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, snakemonster.str, txtStyle);
-				dmg.stroke = '#000000';
-    		dmg.strokeThickness = 4;
-				this.time.events.add(500, dmg.destroy, dmg);
-				hero.stats.hp -= snakemonster.str;
+			if (snakemonster.hp >= 0) {
+				this.green_bar.scale.setTo((snakemonster.hp / snakemonster.maxHp), 1);
+			};
 			} else {
-				var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, snakemonster.str, txtStyle);
-				dmg.stroke = '#000000';
-    		dmg.strokeThickness = 4;
-				this.time.events.add(500, dmg.destroy, dmg);
-				fighterTwo.animations.play('attack', 10, false);
-			}
+				if (this.rnd > 0.25) {
+					fighterTwo.animations.play('attack', 10, false);
+					var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, snakemonster.str, txtStyle);
+					dmg.stroke = '#000000';
+	    		dmg.strokeThickness = 4;
+					this.time.events.add(500, dmg.destroy, dmg);
+					hero.stats.hp -= snakemonster.str;
+				} else {
+					var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, snakemonster.str, txtStyle);
+					dmg.stroke = '#000000';
+	    		dmg.strokeThickness = 4;
+					this.time.events.add(500, dmg.destroy, dmg);
+					fighterTwo.animations.play('attack', 10, false);
+				}
 			counter++;
 			this.blood_bar.scale.setTo((hero.stats.hp / hero.stats.maxHp), 1);
 			heroHp.setText("HP: " + hero.stats.hp + " /");
@@ -168,27 +170,42 @@ RubyQuest.Fight.prototype = {
 			this.time.events.add(500, dmg.destroy, dmg);
 			snakemonster.hp -= hero.stats.mgk;
 			counter++;
-			this.green_bar.scale.setTo((snakemonster.hp / snakemonster.maxHp), 1);
+			if (snakemonster.hp >= 0) {
+				this.green_bar.scale.setTo((snakemonster.hp / snakemonster.maxHp), 1);
+			};
+			if (snakemonster.hp <= 0) {
+				this.green_bar.scale.setTo(( 0 / snakemonster.maxHp), 1);
+				this.killMonster();
+			};
 		} else {
 				var dmg = this.add.text(fighterTwo.position.x, fighterTwo.position.y, 'miss', txtStyle);
 				dmg.stroke = '#000000';
     		dmg.strokeThickness = 4;
 				this.time.events.add(500, dmg.destroy, dmg);
 		};
+	},
 
-		if (snakemonster.hp <= 0) {
-				snakemonster.kill();
-				hero.hp = hero.maxHp;
-				hero.position.x = trackPosition;
-				this.state.start('rubyquest', false, false);
+	killMonster: function() {
+		fighterTwo.destroy();
+		hero.stats.hp = hero.stats.maxHp;
+		hero.position.x = trackPosition;
+		emitter = this.add.emitter(fighterTwo.position.x, fighterTwo.position.y, 130);
+		emitter.makeParticles('rubyshard');
+		emitter.minParticleSpeed.setTo(-200, -200);
+		emitter.maxParticleSpeed.setTo(200, 200);
+		emitter.gravity = 0;
+		emitter.start(true, 2000, null, 130);
 
-		};
+		this.time.events.add(2000, this.startGame, this);
+	},
 
+	startGame: function() {
+		this.state.start('rubyquest', false, false);
 	},
 
 	run: function() {
 		hero.position.x = trackPosition;
-		hero.hp = hero.maxHp;
+		hero.stats.hp = hero.stats.maxHp;
 		this.state.start('rubyquest', false, false);
 
 	},

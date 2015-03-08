@@ -145,12 +145,12 @@ RubyQuest.Dream.prototype = {
 	},
 
 	shatterRuby: function() {
-		emitter = this.add.emitter(320, 130, 30);
+		emitter = this.add.emitter(320, 130, 100);
 		emitter.makeParticles('rubyshard');
 		emitter.minParticleSpeed.setTo(-200, -200);
 		emitter.maxParticleSpeed.setTo(200, 200);
 		emitter.gravity = 0;
-		emitter.start(true, 2000, null, 30);
+		emitter.start(true, 2000, null, 130);
 		ruby.destroy();
 
 		this.time.events.add(2000, this.startGame, this);
