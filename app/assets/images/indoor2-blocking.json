@@ -1,0 +1,169 @@
+{ "height":15,
+ "layers":[
+        {
+         "data":[320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 0, 320, 320, 0, 320, 320, 320, 320, 320, 320, 0, 320, 320, 0, 320, 320, 0, 0, 320, 320, 0, 320, 320, 0, 320, 320, 320, 320, 320, 0, 0, 0, 0, 0, 320, 0, 0, 0, 0, 320, 0, 0, 0, 0, 0, 320, 320, 320, 320, 0, 0, 0, 0, 0, 320, 0, 0, 0, 0, 320, 0, 0, 0, 0, 0, 320, 320, 320, 320, 320, 320, 320, 0, 0, 320, 320, 0, 0, 320, 320, 0, 0, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 0, 0, 320, 320, 0, 0, 320, 320, 0, 0, 0, 0, 0, 0, 320, 320, 320, 320, 320, 320, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 320, 320, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 320, 320, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 320, 0, 0, 0, 320, 320, 0, 320, 320, 0, 0, 320, 320, 0, 0, 0, 0, 320, 320, 320, 320, 320, 0, 0, 320, 320, 0, 320, 320, 0, 0, 320, 320, 0, 0, 0, 0, 320, 320, 320, 320, 320, 0, 0, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 0, 0, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 0, 0, 320, 320, 320, 320, 320, 320, 320, 320, 320],
+         "height":15,
+         "name":"blocking",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":20,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":1071,
+ "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
+ "renderorder":"right-down",
+ "tileheight":32,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "image":"..\/..\/..\/..\/Downloads\/LPC asset list\/house.png",
+         "imageheight":224,
+         "imagewidth":288,
+         "margin":0,
+         "name":"house",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "firstgid":64,
+         "image":"..\/..\/..\/..\/Downloads\/LPC asset list\/castlefloors_outside.png",
+         "imageheight":160,
+         "imagewidth":128,
+         "margin":0,
+         "name":"castlefloors_outside",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tilewidth":32,
+         "transparentcolor":"#5c5b40"
+        }, 
+        {
+         "firstgid":84,
+         "image":"..\/..\/..\/..\/Downloads\/LPC asset list\/castle_outside.png",
+         "imageheight":352,
+         "imagewidth":544,
+         "margin":0,
+         "name":"castle_outside",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tilewidth":32,
+         "transparentcolor":"#5c5b40"
+        }, 
+        {
+         "firstgid":271,
+         "image":"..\/..\/..\/..\/Downloads\/LPC asset list\/chests.png",
+         "imageheight":96,
+         "imagewidth":64,
+         "margin":0,
+         "name":"chests",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tilewidth":32,
+         "transparentcolor":"#ffffff"
+        }, 
+        {
+         "firstgid":277,
+         "image":"..\/..\/..\/..\/Downloads\/LPC asset list\/signs.png",
+         "imageheight":64,
+         "imagewidth":96,
+         "margin":0,
+         "name":"signs",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tilewidth":32,
+         "transparentcolor":"#ffffff"
+        }, 
+        {
+         "firstgid":283,
+         "image":"..\/..\/..\/..\/Downloads\/LPC asset list\/buckets.png",
+         "imageheight":64,
+         "imagewidth":96,
+         "margin":0,
+         "name":"buckets",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tilewidth":32,
+         "transparentcolor":"#ffffff"
+        }, 
+        {
+         "firstgid":289,
+         "image":"..\/..\/..\/..\/Downloads\/LPC asset list\/barrel.png",
+         "imageheight":64,
+         "imagewidth":128,
+         "margin":0,
+         "name":"barrel",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tilewidth":32,
+         "transparentcolor":"#ffffff"
+        }, 
+        {
+         "firstgid":297,
+         "image":"..\/..\/..\/..\/Downloads\/LPC asset list\/castle_lightsources.png",
+         "imageheight":128,
+         "imagewidth":160,
+         "margin":0,
+         "name":"castle_lightsources",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tilewidth":32,
+         "transparentcolor":"#ffffff"
+        }, 
+        {
+         "firstgid":317,
+         "image":"..\/..\/..\/..\/Downloads\/LPC asset list\/hole.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"hole",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":32,
+         "tilewidth":32,
+         "transparentcolor":"#ffffff"
+        }],
+ "tilewidth":32,
+ "version":1,
+ "width":20
+}
