@@ -21,7 +21,7 @@ RubyQuest.StartMenu.prototype = {
 	},
 
 	startGame: function() {
-		this.state.start('FirstScene');
+		this.state.start('Dream');
 	}
 
 };
