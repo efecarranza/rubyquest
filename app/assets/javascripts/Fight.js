@@ -85,7 +85,7 @@ RubyQuest.Fight.prototype = {
 		fighterOne = this.add.sprite(150, 260, 'herofight');
 		fighterOne.anchor.setTo(0.5,0.5);
 		trackPosition = hero.position.x;
-		fighterTwo = this.add.sprite(400, 220, 'snakemonster');
+		fighterTwo = this.add.sprite(400, 220, 'evilwizard');
 		fighterTwo.anchor.setTo(0.5, 0.5);
 
 		fighterOne.height = 320;
@@ -97,7 +97,7 @@ RubyQuest.Fight.prototype = {
 
 		// Add animations
 		fighterOne.animations.add('attack', [0,1,2,3,4,5,0]);
-		fighterTwo.animations.add('attack');
+		fighterTwo.animations.add('attack', [7,8,9,10,11,12,13,7]);
 
 		counter = 0;
 
@@ -140,7 +140,7 @@ RubyQuest.Fight.prototype = {
 					fighterTwo.animations.play('attack', 10, false);
 					this.snakebite = this.add.sprite(fighterOne.position.x, fighterOne.position.y, 'snakebite');
 					this.snakebite.animations.add('attack', [1,2,3,4,6,7,8,9,11,12,13,14,16,17,18,19,0]);
-					this.snakebite.animations.play('attack', 10, false);
+					this.snakebite.animations.play('attack', 15, false);
 					var dmg = this.add.text(fighterOne.position.x, fighterOne.position.y, snakemonster.str, txtStyle);
 					dmg.stroke = '#000000';
 	    		dmg.strokeThickness = 4;
@@ -151,7 +151,7 @@ RubyQuest.Fight.prototype = {
 					dmg.stroke = '#000000';
 	    		dmg.strokeThickness = 4;
 					this.time.events.add(500, dmg.destroy, dmg);
-					fighterTwo.animations.play('attack', 30, false);
+					fighterTwo.animations.play('attack', 10, false);
 				}
 			counter++;
 			this.blood_bar.scale.setTo((hero.stats.hp / hero.stats.maxHp), 1);

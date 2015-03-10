@@ -41,7 +41,7 @@ RubyQuest.rubyquest.prototype = {
 		monsterEyes.hp = 100;
 		monsterEyes.str = 15;
 
-		snakemonster = this.add.sprite(780, 2200, 'snakemonster');
+		snakemonster = this.add.sprite(780, 2200, 'evilwizard');
 		snakemonster.maxHp = 100;
 		snakemonster.hp = 100;
 		snakemonster.str = 15;

@@ -20,7 +20,7 @@ RubyQuest.Preloader.prototype = {
 		this.load.image('battlebg', 'assets/battlebackground.png');
 		this.load.spritesheet('logo', 'assets/rubyquestlogo.png', 178, 197);
 		this.load.image('label', 'assets/label.png');
-		this.load.spritesheet('ed', 'assets/edwalk.png', 53, 63);
+		this.load.spritesheet('ed', 'assets/eddroid.png', 53, 49);
 		this.load.image('red_bar', 'assets/red_bar.png');
 		this.load.image('black_bar', 'assets/black_bar.png');
 		this.load.image('yellow_bar', 'assets/green_bar.png');
@@ -38,6 +38,7 @@ RubyQuest.Preloader.prototype = {
 		this.load.tilemap('houseblock', 'assets/indoor1-blocking.json', null, Phaser.Tilemap.TILED_JSON);
 		this.load.spritesheet('father', 'assets/father.png', 63, 62);
 		this.load.spritesheet('snakebite', 'assets/snakebite2.png', 128, 128);
+		this.load.spritesheet('evilwizard', 'assets/evilwizard.png', 64, 47);
 
 		},
 
