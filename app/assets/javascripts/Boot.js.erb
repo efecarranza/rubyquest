@@ -6,7 +6,7 @@ RubyQuest.Boot = function(game) {
 
 	RubyQuest.Boot.prototype = {
 		preload: function() {
-			this.load.image('preloadBar', 'assets/preloadBar.png');
+			this.load.image('preloadBar', <% image_path('preloadBar.png') %>;
 		},
 
 		create: function() {
