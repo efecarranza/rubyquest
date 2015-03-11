@@ -125,7 +125,7 @@ RubyQuest.rubyquest.prototype = {
 		this.physics.arcade.collide(hero, blockedLayer, null, null, this);
 
 		if (progress.act1.metEd && !progress.gems.gemOne) {
-			$('#teachings').css("background-image", "url(/assets/lesson1.png");
+			$('#teachings').css("background-image", 'url(<%= asset_path('lesson1.png') %>');
 			$('#teachings').show().css({'position':'absolute','top':$('canvas').offset().top +'px','left':$('canvas').offset().left+'px'});
 			$('#input').show().css({'position':'absolute','top':$('canvas').offset().top + 400 + 'px','left':$('canvas').offset().left+ 230 +'px'});;
 

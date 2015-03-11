@@ -1,6 +1,8 @@
 <h1>Development Blog - RubyQuest Team</h1>
 
+<% if current_user && current_user.admin %>
 <%= link_to 'New Blog Post', new_article_path %><br><br>
+<% end %>
 
 <table>
   <tr>
