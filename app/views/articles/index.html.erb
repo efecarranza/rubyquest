@@ -1,10 +1,10 @@
 <h1>Development Blog - RubyQuest Team</h1>
 
 <% if current_user && current_user.admin %>
-<%= link_to 'New Blog Post', new_article_path %><br><br>
+<%= link_to 'New Blog Post', new_article_path, class: "nbmargin" %><br><br>
 <% end %>
 
-<table>
+<table style="margin-left: 20px;">
   <tr>
     <th width="40%">Title</th>
     <th width="40%">Post Date</th>
