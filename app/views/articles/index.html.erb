@@ -15,7 +15,7 @@
   <% @articles.each do |article| %>
   <tr class="articles">
     <td><%= article.title %></td>
-    <td><%= time_ago_in_words(article.created_at) %></td>
+    <td><%= time_ago_in_words(article.created_at) %> ago</td>
     <td>
       <%= link_to 'View', article_path(article) %>
       <% if current_user && current_user.admin %>
