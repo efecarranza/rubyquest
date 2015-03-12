@@ -1,5 +1,17 @@
-<%= simple_form_for (@post) do |f| %>
-	<%= f.input :title, class: "newblog" %>
-	<%= f.input :content, class: "newblog" %>
+<%= form_for (@post) do |f| %>
+<div class="formpost">
+<p>
+  <%= f.label :title %>
+	<%= f.text_field :title, class: "newblog" %>
+</p>
+
+<p>
+  <%= f.label :content %>
+	<%= f.text_area :content, class: "newblog2" %>
+
+</p>
+<p>
 	<%= f.submit %>
+</p>
+</div>
 <% end  %>
