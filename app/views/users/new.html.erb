@@ -1,16 +1,30 @@
 <h1>Sign Up!</h1>
 <div class="text-justify">
 <%= form_for :user, url: '/users' do |f| %>
-
-		Name:    <%=f.text_field :name %>
+	<div class="form">
+		<%= f.label :name %>
+		<%=f.text_field :name %>
+	</div>
 	<br/>
-		Username:<%=f.text_field :username %>
+	<div class="form">
+		<%= f.label :username %>
+		<%=f.text_field :username %>
+	</div>
 	<br/>
-		Email:   <%=f.text_field :email %>
+	<div class="form">
+		<%= f.label :email %>
+		<%=f.text_field :email %>
+	</div>
 	<br/>
-		Password:<%=f.password_field :password %>
+	<div class="form">
+		<%= f.label :password %>
+		<%=f.password_field :password %>
+	</div>
 	<br/>
-		Password Confirmation:<%=f.password_field :password_confirmation %>
+	<div class="form">
+		<%= f.label :password_confirmation %>
+		<%=f.password_field :password_confirmation %>
+	</div>
 	<br/>
 		    <%= f.submit "Submit" %>
 	<br/>
